@@ -20,6 +20,7 @@
     {"name":"action","order":1,"path":"folders/Scripts/compatibility/action.yy",},
     {"name":"instance","order":2,"path":"folders/Scripts/compatibility/instance.yy",},
     {"name":"object","order":3,"path":"folders/Scripts/compatibility/object.yy",},
+    {"name":"Characters","order":5,"path":"folders/Objects/Characters.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"bhpg_pattern_step","order":4,"path":"scripts/bhpg_pattern_step/bhpg_pattern_step.yy",},
@@ -30,11 +31,11 @@
     {"name":"bhpg_test_pattern","order":1,"path":"objects/bhpg_test_pattern/bhpg_test_pattern.yy",},
     {"name":"__global_object_depths","order":4,"path":"scripts/__global_object_depths/__global_object_depths.yy",},
     {"name":"action_kill_object","order":2,"path":"scripts/action_kill_object/action_kill_object.yy",},
-    {"name":"bhpg_test_shot","order":2,"path":"sprites/bhpg_test_shot/bhpg_test_shot.yy",},
     {"name":"spr_Player_shot","order":1,"path":"sprites/spr_Player_shot/spr_Player_shot.yy",},
     {"name":"action_current_room","order":1,"path":"scripts/action_current_room/action_current_room.yy",},
+    {"name":"obj_Player","order":2,"path":"objects/obj_Player/obj_Player.yy",},
     {"name":"__init_global","order":5,"path":"scripts/__init_global/__init_global.yy",},
-    {"name":"obj_foe","order":3,"path":"objects/obj_foe/obj_foe.yy",},
+    {"name":"obj_foe","order":1,"path":"objects/obj_foe/obj_foe.yy",},
     {"name":"spr_foe","order":3,"path":"sprites/spr_foe/spr_foe.yy",},
   ],
 }

@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "bhpg_test_shot",
-    "path": "sprites/bhpg_test_shot/bhpg_test_shot.yy",
+    "name": "spr_Player_shot",
+    "path": "sprites/spr_Player_shot/spr_Player_shot.yy",
   },
   "spriteMaskId": null,
   "visible": true,

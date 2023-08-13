@@ -9,10 +9,13 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Characters",
+    "path": "folders/Objects/Characters.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_control",
+    "path": "objects/obj_control/obj_control.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

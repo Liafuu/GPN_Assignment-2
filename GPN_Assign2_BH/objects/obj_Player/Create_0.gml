@@ -1,3 +1,5 @@
+event_inherited();
+
 key_hor = 0;
 key_vert = 0;
 
