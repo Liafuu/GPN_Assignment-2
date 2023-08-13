@@ -1,6 +1,4 @@
-// Destroys bullets outside of room
-instance_destroy();
-
+action_kill_object();
 
 
 

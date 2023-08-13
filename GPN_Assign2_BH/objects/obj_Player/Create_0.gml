@@ -4,5 +4,5 @@ key_vert = 0;
 focus = false;
 player_spd = 1;
 
-shot_per_sec = 8;
+shot_per_sec = 18;
 last_shot_time = 0;

@@ -1,5 +1,5 @@
-self.xspeed = 0;
-self.yspeed = -4;
+image_speed = 0;
+curve = 0;
 
 
 

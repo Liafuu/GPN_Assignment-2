@@ -1,5 +1,6 @@
-self.x += self.xspeed;
-self.y += self.yspeed;
+speed += accel;
+direction += curve;
+image_angle = direction;
 
 
 
