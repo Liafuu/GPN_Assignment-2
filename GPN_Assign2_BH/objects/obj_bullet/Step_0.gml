@@ -1,5 +1,5 @@
 self.x += self.xspeed;
-self.y += self.yspeed
+self.y += self.yspeed;
 
 
 
