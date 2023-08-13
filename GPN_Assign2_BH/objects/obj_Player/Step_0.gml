@@ -27,7 +27,7 @@ y=clamp(y, 0, room_height - sprite_height);
 
 // Shooting bullets
 if (key_shoot ) {
-	if (last_shot_time + 1 / shot_per_sec <= (current_time / 1000)) {
+	if (last_shot_time + 1 / shot_per_sec <= current_time / 1000) {
 		instance_create_depth(self.x, self.y, self.depth + 1, obj_bullet);
 		last_shot_time = current_time / 1000;
 	}
