@@ -59,7 +59,7 @@
     {"id":{"name":"action_current_room","path":"scripts/action_current_room/action_current_room.yy",},},
     {"id":{"name":"obj_Player","path":"objects/obj_Player/obj_Player.yy",},},
     {"id":{"name":"__init_global","path":"scripts/__init_global/__init_global.yy",},},
-    {"id":{"name":"obj_foe","path":"objects/obj_foe/obj_foe.yy",},},
+    {"id":{"name":"obj_foe_basic","path":"objects/obj_foe_basic/obj_foe_basic.yy",},},
     {"id":{"name":"spr_foe","path":"sprites/spr_foe/spr_foe.yy",},},
     {"id":{"name":"Bullet_Hell_Pattern_Generator","path":"extensions/Bullet_Hell_Pattern_Generator/Bullet_Hell_Pattern_Generator.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},

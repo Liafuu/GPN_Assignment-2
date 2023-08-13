@@ -35,7 +35,7 @@
     {"name":"action_current_room","order":1,"path":"scripts/action_current_room/action_current_room.yy",},
     {"name":"obj_Player","order":2,"path":"objects/obj_Player/obj_Player.yy",},
     {"name":"__init_global","order":5,"path":"scripts/__init_global/__init_global.yy",},
-    {"name":"obj_foe","order":1,"path":"objects/obj_foe/obj_foe.yy",},
+    {"name":"obj_foe_basic","order":1,"path":"objects/obj_foe_basic/obj_foe_basic.yy",},
     {"name":"spr_foe","order":3,"path":"sprites/spr_foe/spr_foe.yy",},
   ],
 }
