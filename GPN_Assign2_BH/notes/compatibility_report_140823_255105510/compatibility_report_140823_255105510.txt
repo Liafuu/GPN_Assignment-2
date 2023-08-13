@@ -1,0 +1,32 @@
+Converting GML script: C:\Users\Asus\AppData\Local\GameMakerStudio2\GMS2TEMP\com.regniwekim.bullethellgenerator_b0420866\mvc\conv\1424316465_Bullet_Hell_Pattern_Generator_4149faed\mvc\scripts\bhpg_pattern_step\bhpg_pattern_step.gml
+Converted description /// @description bhpg_pattern_step()
+
+Converting GML script: C:\Users\Asus\AppData\Local\GameMakerStudio2\GMS2TEMP\com.regniwekim.bullethellgenerator_b0420866\mvc\conv\1424316465_Bullet_Hell_Pattern_Generator_4149faed\mvc\scripts\bhpg_pattern_init\bhpg_pattern_init.gml
+Converted description /// @description bhpg_pattern_init(number of bullets, bullet spread, start angle, total arrays, array spread, begin spin speed, spin change rate, spin reverse, max spin speed, fire rate, object width,object height,x offset,y offset)/// @param number of bullets
+/// @param  bullet spread
+/// @param  start angle
+/// @param  total arrays
+/// @param  array spread
+/// @param  begin spin speed
+/// @param  spin change rate
+/// @param  spin reverse
+/// @param  max spin speed
+/// @param  fire rate
+/// @param  object width
+/// @param object height
+/// @param x offset
+/// @param y offset
+
+Converting GML script: C:\Users\Asus\AppData\Local\GameMakerStudio2\GMS2TEMP\com.regniwekim.bullethellgenerator_b0420866\mvc\conv\1424316465_Bullet_Hell_Pattern_Generator_4149faed\mvc\scripts\bhpg_bullet_init\bhpg_bullet_init.gml
+Converted description /// @description bhpg_bullet_init(bullet object, bullet speed, bullet acceleration, bullet curve);/// @param bullet object
+/// @param  bullet speed
+/// @param  bullet acceleration
+/// @param  bullet curve
+
+Added compatibility script 'action\action_current_room.gml'
+Added compatibility script 'action\action_kill_object.gml'
+Added compatibility script 'instance\instance_create.gml'
+Added compatibility script 'object\object_get_depth.gml'
+Added compatibility script 'action\__init_action.gml'
+Added compatibility script '__init_global.gml'
+Added compatibility script '__global_object_depths.gml'
