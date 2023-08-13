@@ -55,7 +55,7 @@
     {"id":{"name":"__global_object_depths","path":"scripts/__global_object_depths/__global_object_depths.yy",},},
     {"id":{"name":"action_kill_object","path":"scripts/action_kill_object/action_kill_object.yy",},},
     {"id":{"name":"__init_action","path":"scripts/__init_action/__init_action.yy",},},
-    {"id":{"name":"spr_Player_shot","path":"sprites/spr_Player_shot/spr_Player_shot.yy",},},
+    {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},},
     {"id":{"name":"action_current_room","path":"scripts/action_current_room/action_current_room.yy",},},
     {"id":{"name":"obj_Player","path":"objects/obj_Player/obj_Player.yy",},},
     {"id":{"name":"__init_global","path":"scripts/__init_global/__init_global.yy",},},

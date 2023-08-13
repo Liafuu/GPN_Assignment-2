@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_Player_shot",
-    "path": "sprites/spr_Player_shot/spr_Player_shot.yy",
+    "name": "spr_bullet",
+    "path": "sprites/spr_bullet/spr_bullet.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -31,7 +31,7 @@
     {"name":"bhpg_test_pattern","order":1,"path":"objects/bhpg_test_pattern/bhpg_test_pattern.yy",},
     {"name":"__global_object_depths","order":4,"path":"scripts/__global_object_depths/__global_object_depths.yy",},
     {"name":"action_kill_object","order":2,"path":"scripts/action_kill_object/action_kill_object.yy",},
-    {"name":"spr_Player_shot","order":1,"path":"sprites/spr_Player_shot/spr_Player_shot.yy",},
+    {"name":"spr_bullet","order":1,"path":"sprites/spr_bullet/spr_bullet.yy",},
     {"name":"action_current_room","order":1,"path":"scripts/action_current_room/action_current_room.yy",},
     {"name":"obj_Player","order":2,"path":"objects/obj_Player/obj_Player.yy",},
     {"name":"__init_global","order":5,"path":"scripts/__init_global/__init_global.yy",},
