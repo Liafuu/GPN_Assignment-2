@@ -1,6 +1,2 @@
-self.OnDamage = function(obj_bullet) {
-}
-
-
-
-
+friendly = false;
+self.OnDamage = function(bullet) {}

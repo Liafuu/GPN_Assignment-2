@@ -1,5 +1,7 @@
 event_inherited();
 
+friendly = true;
+
 key_hor = 0;
 key_vert = 0;
 
