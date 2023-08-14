@@ -2,7 +2,7 @@ event_inherited();
 
 type = 0;
 
-bhpg_pattern_init(1, 0, 270, 6, 300, 0, 0, 1, 30, 15, 0, 0, 0, 0);
+bhpg_pattern_init(2, 10, 0, 8, 2560, 20, 2, 1, 50, 20, 0, 0, 0, 0);
 
 bhpg_bullet_init(bhpg_test_bullet, 4, 0, 0);
 

@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_foe_target_front",
+  "name": "obj_foe_target_side_opp",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
@@ -9,7 +9,7 @@
   "managed": true,
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_control","path":"objects/obj_control/obj_control.yy",},"propertyId":{"name":"health","path":"objects/obj_control/obj_control.yy",},"value":"14",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_control","path":"objects/obj_control/obj_control.yy",},"propertyId":{"name":"path_spd","path":"objects/obj_control/obj_control.yy",},"value":"3",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_control","path":"objects/obj_control/obj_control.yy",},"propertyId":{"name":"path_spd","path":"objects/obj_control/obj_control.yy",},"value":"4",},
   ],
   "parent": {
     "name": "Foes",

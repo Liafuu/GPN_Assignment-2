@@ -27,5 +27,5 @@ self.Aim = function(player) {
 	shot_angle = point_direction(self.x, self.y, target.x, target.y)
 }
 
-path_start(self.path_side, self.path_spd, path_action_stop, false);
+path_start(self.path_side_opp, self.path_spd, path_action_stop, false);
 

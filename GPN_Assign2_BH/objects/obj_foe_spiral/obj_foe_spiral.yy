@@ -7,7 +7,10 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_control","path":"objects/obj_control/obj_control.yy",},"propertyId":{"name":"health","path":"objects/obj_control/obj_control.yy",},"value":"250",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_control","path":"objects/obj_control/obj_control.yy",},"propertyId":{"name":"path_spd","path":"objects/obj_control/obj_control.yy",},"value":"3",},
+  ],
   "parent": {
     "name": "Foes",
     "path": "folders/Objects/Foes.yy",
@@ -32,8 +35,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_foe_special",
-    "path": "sprites/spr_foe_special/spr_foe_special.yy",
+    "name": "spr_foe_spiral",
+    "path": "sprites/spr_foe_spiral/spr_foe_spiral.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -12,9 +12,9 @@ player_spd = 1;
 
 
 // Health and IFrame duration
-self.health = 3;
+self.health = 5;
 self.iframe_time = 0;
-self.iframe_dura = 5;
+self.iframe_dura = 6;
 
 
 // Invincibility frames

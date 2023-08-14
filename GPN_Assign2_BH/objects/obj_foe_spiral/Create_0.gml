@@ -10,8 +10,7 @@ self.Die = function() {
 	instance_destroy();
 }
 
-// Health
-self.health = 250;
+// Taking damage
 self.OnDamage = function(bullet) {
 	
 	// Takes damage
@@ -25,8 +24,8 @@ self.OnDamage = function(bullet) {
 	}
 }
 
-path_start(self.path_enter, 2, path_action_stop, false);
+path_start(self.path_enter_stops, self.path_spd, path_action_stop, false);
 
 // Initiates bullet pattern
-bhpg_pattern_init(4, 30, 180, 2, 400, 1, 2, 1, 30, 15, 16, 16, 0, 0);
-bhpg_bullet_init(obj_foe_bullet, 2, -0.20, 0);
+bhpg_pattern_init(4, 30, 180, 2, 400, 1, 2, 1, 30, 12, 16, 16, 0, 0);
+bhpg_bullet_init(obj_foe_bullet, 2, -0.10, 0);

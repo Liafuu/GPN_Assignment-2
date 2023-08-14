@@ -5,8 +5,7 @@ self.Die = function() {
 	instance_destroy();
 }
 
-// Health
-self.health = 14;
+// Taking Damage
 self.OnDamage = function(bullet) {
 	
 	// Takes damage
@@ -28,5 +27,5 @@ self.Aim = function(player) {
 	shot_angle = point_direction(self.x, self.y, target.x, target.y)
 }
 
-path_start(self.path_enter, 1.5, path_action_stop, false);
+path_start(self.path_enter, self.path_spd, path_action_stop, false);
 
