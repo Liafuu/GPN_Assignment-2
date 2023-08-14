@@ -1,7 +1,9 @@
-// Set speed
-var velocity = 2;
-self.yspeed = velocity;
+// Checks if object is moving up
+vspeed = -3;
+going_up = true;
 
-// Set fall timer
-fall_timer = 6;
-last_fall_time = 0;
+// Sets a maximum distance it can travel upward
+distance = 0;
+max_dist = 200;
+
+pickup = true;

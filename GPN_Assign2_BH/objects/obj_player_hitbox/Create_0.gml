@@ -2,7 +2,7 @@ event_inherited();
 
 // To prevent friendly fire
 friendly = true;
-
+player = true;
 
 // Movement
 key_hor = 0;
@@ -47,6 +47,13 @@ self.OnEntityContact = function(entity) {
 	}
 	
 	self.iframe_time = current_time / 1000;
+}
+
+// Collecting lives
+self.OnCollection = function(pickup) {
+	self.health++;
+	//show_debug_message("Stock up! Lives: " + string(self.health));
+	instance_destroy(pickup);
 }
 
 // Sends a message once ran out of lives
