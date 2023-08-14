@@ -50,6 +50,7 @@
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"obj_player_bullet","path":"objects/obj_player_bullet/obj_player_bullet.yy",},},
     {"id":{"name":"bhpg_test","path":"rooms/bhpg_test/bhpg_test.yy",},},
+    {"id":{"name":"spr_player_right","path":"sprites/spr_player_right/spr_player_right.yy",},},
     {"id":{"name":"object_get_depth","path":"scripts/object_get_depth/object_get_depth.yy",},},
     {"id":{"name":"bhpg_bullet_init","path":"scripts/bhpg_bullet_init/bhpg_bullet_init.yy",},},
     {"id":{"name":"instance_create","path":"scripts/instance_create/instance_create.yy",},},
