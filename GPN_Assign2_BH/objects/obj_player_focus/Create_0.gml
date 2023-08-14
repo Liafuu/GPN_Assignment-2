@@ -1,6 +1,6 @@
 event_inherited();
 
-damage = 2;
+damage = 3.5;
 friendly = true;
 
 

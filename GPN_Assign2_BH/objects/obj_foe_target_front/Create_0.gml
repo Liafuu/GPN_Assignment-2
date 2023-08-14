@@ -6,7 +6,7 @@ self.Die = function() {
 }
 
 // Health
-self.health = 20;
+self.health = 12;
 self.OnDamage = function(bullet) {
 	
 	// Takes damage
@@ -19,10 +19,14 @@ self.OnDamage = function(bullet) {
 	}
 }
 
+// Aiming at target player
+shot_per_sec = 3;
+last_shot_time = 0;
+
+self.Aim = function(player) {
+	target = player;
+	shot_angle = point_direction(self.x, self.y, target.x, target.y)
+}
+
 path_start(self.path_enter, 2, path_action_stop, false);
-
-// Initializes the bullet pattern
-bhpg_pattern_init(1, 0, 270, 6, 1800, 0, 2, 1, 10, 50, 16, 16, 0, 0);
-bhpg_bullet_init(obj_foe_bullet, 5, 0, 0);
-
 

@@ -2,14 +2,16 @@ event_inherited();
 
 // Method for foe dying
 self.Die = function() {
-	life_pickup = instance_create(self.x, self.y, obj_pickup);
-	life_pickup.image_xscale = 4;
-	life_pickup.image_yscale = 4;
+	if (will_drop) 
+		life_pickup = instance_create(self.x, self.y, obj_pickup);
+		life_pickup.image_xscale = 4;
+		life_pickup.image_yscale = 4;
+	}
 	instance_destroy();
 }
 
 // Health
-self.health = 500;
+self.health = 450;
 self.OnDamage = function(bullet) {
 	
 	// Takes damage
@@ -22,6 +24,8 @@ self.OnDamage = function(bullet) {
 		self.Die();
 	}
 }
+
+path_start(self.path_enter, 2, path_action_stop, false);
 
 // Initiates bullet pattern
 bhpg_pattern_init(5, 30, 180, 2, 400, 0, 2, 1, 30, 15, 16, 16, 0, 0);
