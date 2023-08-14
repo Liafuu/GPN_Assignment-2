@@ -1,7 +1,15 @@
 event_inherited();
 
+// Method for foe dying
+self.Die = function() {
+	life_pickup = instance_create(self.x, self.y, obj_pickup);
+	life_pickup.image_xscale = 4;
+	life_pickup.image_yscale = 4;
+	instance_destroy();
+}
+
 // Health
-self.health = 400;
+self.health = 500;
 self.OnDamage = function(bullet) {
 	
 	// Takes damage
@@ -11,7 +19,7 @@ self.OnDamage = function(bullet) {
 	instance_destroy(bullet);
 	if (self.health <= 0) {
 		// Destroys foe once their hp hits 0
-		instance_destroy();
+		self.Die();
 	}
 }
 

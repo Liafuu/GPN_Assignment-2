@@ -1,5 +1,3 @@
-event_inherited()
-
 // Main Movement
 key_left = keyboard_check(vk_left);
 key_right = keyboard_check(vk_right);
@@ -10,10 +8,10 @@ key_focus = keyboard_check(vk_shift);
 // Checks if shift is pressed
 if (key_focus) {
 	focus = true;
-	player_spd = 1;
+	player_spd = 1.5;
 } else {
 	focus = false;
-	player_spd = 3.5;
+	player_spd = 4;
 }
 
 // Moves the player
@@ -22,8 +20,5 @@ key_vert = (key_down - key_up) * player_spd;
 x += key_hor;
 y += key_vert;
 
-
-// Have it stay inside the room
-x=clamp(x, 0, room_width - sprite_width);
-y=clamp(y, 0, room_height - sprite_height);
-
+x = clamp(x, 25, room_width - sprite_width - 22);
+y = clamp(y, 25, room_height - sprite_height - 38);

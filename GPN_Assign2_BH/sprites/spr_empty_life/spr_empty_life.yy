@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_life",
+  "name": "spr_empty_life",
   "bbox_bottom": 12,
   "bbox_left": 0,
   "bbox_right": 14,
@@ -13,17 +13,17 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3225d62e-74e8-4f03-aee6-156f58baf80d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b7cad9f6-47f9-42d6-9c5f-4f6d59096430",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 13,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"76ef57e8-34a3-4077-97c3-dcdd30ccb5c9","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"dd8ab8e4-fe65-4a9b-8ff7-822150ad9309","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 0,
+  "origin": 4,
   "parent": {
     "name": "Hearts",
     "path": "folders/Sprites/Hearts.yy",
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_life",
+    "name": "spr_empty_life",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,13 +54,13 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"3225d62e-74e8-4f03-aee6-156f58baf80d","path":"sprites/spr_life/spr_life.yy",},},},"Disabled":false,"id":"7c2fac1e-2602-48c8-93c5-1b6acb78704f","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b7cad9f6-47f9-42d6-9c5f-4f6d59096430","path":"sprites/spr_empty_life/spr_empty_life.yy",},},},"Disabled":false,"id":"1c82245a-a24c-4b7b-81f8-2a2808e4cf3a","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 0,
-    "yorigin": 0,
+    "xorigin": 7,
+    "yorigin": 6,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

@@ -50,10 +50,10 @@ self.OnEntityContact = function(entity) {
 }
 
 // Collecting lives
-self.OnCollection = function(pickup) {
+self.OnCollection = function(life) {
 	self.health++;
-	//show_debug_message("Stock up! Lives: " + string(self.health));
-	instance_destroy(pickup);
+	show_debug_message("HP up! Lives: " + string(self.health));
+	instance_destroy(life);
 }
 
 // Sends a message once ran out of lives

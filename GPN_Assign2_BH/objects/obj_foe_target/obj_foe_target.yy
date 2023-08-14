@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_foe_special",
+  "name": "obj_foe_target",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_foe_special",
-    "path": "sprites/spr_foe_special/spr_foe_special.yy",
+    "name": "spr_foe_aim",
+    "path": "sprites/spr_foe_aim/spr_foe_aim.yy",
   },
   "spriteMaskId": null,
   "visible": true,
