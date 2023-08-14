@@ -2,9 +2,9 @@ event_inherited();
 
 type = 0;
 
-bhpg_pattern_init(5, 40, 70, 1, 90, 0, 0, 1, 30, 4, 16, 16, 32, 32);
+bhpg_pattern_init(1, 40, 270, 1, 90, 0, 0, 1, 30, 15, 124, 124, 0, 0);
 
-bhpg_bullet_init(bhpg_test_bullet, 3, 0.05, 0);
+bhpg_bullet_init(bhpg_test_bullet, 4, 0, 0);
 
 bullets_col = c_white;
 spin_col = c_white;

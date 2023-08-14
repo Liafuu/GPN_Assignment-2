@@ -30,7 +30,8 @@ y=clamp(y, 0, room_height - sprite_height);
 // Shooting bullets
 if (key_shoot ) {
 	if (last_shot_time + 1 / shot_per_sec <= current_time / 1000) {
-		bhpg_pattern_init(5, 20, 80, 1, 90, 0, 0, 1, 30, 4, 16, 16, 0, 5);
+		obj_bullet.friendly = true;
+		bhpg_pattern_init(5, 20, 80, 1, 90, 0, 0, 1, 30, 4, 64, 64, 0, 60);
 		bhpg_bullet_init(obj_bullet, 15, 0, 0);
 		bhpg_pattern_step();
 		last_shot_time = current_time / 1000;
