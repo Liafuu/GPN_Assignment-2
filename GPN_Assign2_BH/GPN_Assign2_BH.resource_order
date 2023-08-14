@@ -54,7 +54,7 @@
     {"name":"obj_pickup","order":4,"path":"objects/obj_pickup/obj_pickup.yy",},
     {"name":"obj_foe_bullet","order":2,"path":"objects/obj_foe_bullet/obj_foe_bullet.yy",},
     {"name":"spr_player_hitbox","order":3,"path":"sprites/spr_player_hitbox/spr_player_hitbox.yy",},
-    {"name":"obj_foe_special","order":2,"path":"objects/obj_foe_special/obj_foe_special.yy",},
+    {"name":"obj_foe_spiral","order":2,"path":"objects/obj_foe_spiral/obj_foe_spiral.yy",},
     {"name":"spr_player_left","order":1,"path":"sprites/spr_player_left/spr_player_left.yy",},
   ],
 }

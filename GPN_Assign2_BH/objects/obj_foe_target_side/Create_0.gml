@@ -6,7 +6,7 @@ self.Die = function() {
 }
 
 // Health
-self.health = 12;
+self.health = 14;
 self.OnDamage = function(bullet) {
 	
 	// Takes damage

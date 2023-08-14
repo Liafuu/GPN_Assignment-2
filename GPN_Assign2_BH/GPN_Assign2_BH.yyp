@@ -86,7 +86,7 @@
     {"id":{"name":"spr_foe","path":"sprites/spr_foe/spr_foe.yy",},},
     {"id":{"name":"spr_player_hitbox","path":"sprites/spr_player_hitbox/spr_player_hitbox.yy",},},
     {"id":{"name":"Bullet_Hell_Pattern_Generator","path":"extensions/Bullet_Hell_Pattern_Generator/Bullet_Hell_Pattern_Generator.yy",},},
-    {"id":{"name":"obj_foe_special","path":"objects/obj_foe_special/obj_foe_special.yy",},},
+    {"id":{"name":"obj_foe_spiral","path":"objects/obj_foe_spiral/obj_foe_spiral.yy",},},
     {"id":{"name":"spr_player_left","path":"sprites/spr_player_left/spr_player_left.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
