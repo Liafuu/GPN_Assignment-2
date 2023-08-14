@@ -1,7 +1,6 @@
 event_inherited();
 
-// Initiates the shots
+// Makes enemies shoot
 bhpg_pattern_step();
-
 
 
