@@ -8,6 +8,12 @@ key_down = keyboard_check(vk_down);
 key_focus = keyboard_check(vk_shift);
 key_shoot = keyboard_check_direct(ord("A"));
 
+// Sets sprite
+if (key_left) {sprite_index = spr_player_left;}
+else if (key_right) {sprite_index = spr_player_right;}
+else {sprite_index = spr_player;}
+
+// Checks if shift is pressed
 if (key_focus) {
 	focus = true;
 	player_spd = 1;
@@ -16,9 +22,9 @@ if (key_focus) {
 	player_spd = 3.5;
 }
 
+// Moves the player
 key_hor = (key_right - key_left) * player_spd;
 key_vert = (key_down - key_up) * player_spd;
-
 x += key_hor;
 y += key_vert;
 
@@ -30,6 +36,7 @@ y=clamp(y, 0, room_height - sprite_height);
 // Shooting bullets
 if (key_shoot && key_focus) {
 	if (last_shot_time + 1 / shot_per_sec <= current_time / 1000) {
+		// Shooting during Focus Mode
 		bhpg_pattern_init(1, 20, 90, 1, 90, 0, 0, 1, 30, 4, 0, 0, -25, -10);
 		bhpg_bullet_init(obj_player_focus, 20, 0, 0);
 		bhpg_pattern_step();
@@ -49,6 +56,7 @@ if (key_shoot && key_focus) {
 	}
 } else if (key_shoot ) {
 	if (last_shot_time + 1 / shot_per_sec <= current_time / 1000) {
+		// Shooting normally
 		bhpg_pattern_init(5, 20, 80, 1, 90, 0, 0, 1, 30, 4, 0, 0, 0, -10);
 		bhpg_bullet_init(obj_player_bullet, 15, 0, 0);
 		bhpg_pattern_step();
