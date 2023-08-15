@@ -12,8 +12,8 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_control","path":"objects/obj_control/obj_control.yy",},"propertyId":{"name":"path_spd","path":"objects/obj_control/obj_control.yy",},"value":"5.5",},
   ],
   "parent": {
-    "name": "Foes",
-    "path": "folders/Objects/Foes.yy",
+    "name": "Side",
+    "path": "folders/Objects/Foes/Side.yy",
   },
   "parentObjectId": {
     "name": "obj_control",

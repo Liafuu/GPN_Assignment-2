@@ -1,5 +1,5 @@
 // Checks if the player is collecting it
-if (self.id.player == other.id.pickup) {
+if (self.friendly == other.id.pickup) {
 	self.OnCollection(other.id);
 }
 	

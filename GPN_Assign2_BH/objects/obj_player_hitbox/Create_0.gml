@@ -2,7 +2,7 @@ event_inherited();
 
 // To prevent friendly fire
 friendly = true;
-player = true;
+hitbox = true;
 
 // Movement
 key_hor = 0;
@@ -26,12 +26,9 @@ self.Invuln = function() {
 self.OnDamage = function(bullet) {
 	if (self.Invuln()) {return;} 
 	
-	// Takes damage and destroys all bullets on screen
+	// Takes damage
 	self.health -= bullet.damage;
-	instance_destroy(obj_bullet_main);
-	if (self.health <= 0) {
-		self.Die();
-	}
+	self.Die();
 	
 	self.iframe_time = current_time / 1000;
 }
@@ -40,11 +37,9 @@ self.OnDamage = function(bullet) {
 self.OnEntityContact = function(entity) {
 	if (self.Invuln()) {return;}
 	
-	// Takes damage when in contact with other entities
+	// Takes damage
 	self.health --;
-	if (self.health <= 0) {
-		self.Die();
-	}
+	self.Die();
 	
 	self.iframe_time = current_time / 1000;
 }
@@ -52,13 +47,12 @@ self.OnEntityContact = function(entity) {
 // Collecting lives
 self.OnCollection = function(life) {
 	self.health++;
-	show_debug_message("HP up! Lives: " + string(self.health));
 	instance_destroy(life);
 }
 
-// Sends a message once ran out of lives
+// Resets spawn and destroy all bullets on screen
 self.Die = function() {
-	show_debug_message("You died! pchuuun...");
+	instance_destroy(obj_bullet_main);
 }
 
 

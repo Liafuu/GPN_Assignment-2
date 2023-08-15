@@ -1,6 +1,7 @@
 event_inherited();
 
 // Makes enemies shoot
-bhpg_pattern_step();
-
+if (path_position == 1) {
+	bhpg_pattern_step();
+}
 

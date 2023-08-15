@@ -9,11 +9,11 @@
   "managed": true,
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_control","path":"objects/obj_control/obj_control.yy",},"propertyId":{"name":"health","path":"objects/obj_control/obj_control.yy",},"value":"14",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_control","path":"objects/obj_control/obj_control.yy",},"propertyId":{"name":"path_spd","path":"objects/obj_control/obj_control.yy",},"value":"3",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_control","path":"objects/obj_control/obj_control.yy",},"propertyId":{"name":"path_spd","path":"objects/obj_control/obj_control.yy",},"value":"3.5",},
   ],
   "parent": {
-    "name": "Foes",
-    "path": "folders/Objects/Foes.yy",
+    "name": "Front",
+    "path": "folders/Objects/Foes/Front.yy",
   },
   "parentObjectId": {
     "name": "obj_control",
