@@ -8,16 +8,17 @@
   ],
   "managed": true,
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_control","path":"objects/obj_control/obj_control.yy",},"propertyId":{"name":"health","path":"objects/obj_control/obj_control.yy",},"value":"25",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_control","path":"objects/obj_control/obj_control.yy",},"propertyId":{"name":"path_spd","path":"objects/obj_control/obj_control.yy",},"value":"3",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_foe","path":"objects/obj_foe/obj_foe.yy",},"propertyId":{"name":"path_enter","path":"objects/obj_foe/obj_foe.yy",},"value":"0",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_foe","path":"objects/obj_foe/obj_foe.yy",},"propertyId":{"name":"path_exit","path":"objects/obj_foe/obj_foe.yy",},"value":"0",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_foe","path":"objects/obj_foe/obj_foe.yy",},"propertyId":{"name":"health","path":"objects/obj_foe/obj_foe.yy",},"value":"30",},
   ],
   "parent": {
-    "name": "Front",
-    "path": "folders/Objects/Foes/Front.yy",
+    "name": "Foes",
+    "path": "folders/Objects/Foes.yy",
   },
   "parentObjectId": {
-    "name": "obj_control",
-    "path": "objects/obj_control/obj_control.yy",
+    "name": "obj_foe",
+    "path": "objects/obj_foe/obj_foe.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

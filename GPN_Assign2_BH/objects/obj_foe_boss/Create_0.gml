@@ -17,16 +17,6 @@ phase_1 = false;
 phase_2 = false;
 phase_3 = false;
 
-// Method for foe dying
-self.Die = function() {
-	if (will_drop) {
-		life_pickup = instance_create(self.x, self.y, obj_pickup);
-		life_pickup.image_xscale = 4;
-		life_pickup.image_yscale = 4;
-	}
-	instance_destroy();
-}
-
 // Set the angle to target player
 self.Aim = function(player) {
 	target = player;
@@ -91,7 +81,7 @@ self.OnDamage = function(bullet) {
 	}
 }
 
-path_start(self.path_enter_stops, self.path_spd, path_action_stop, false);
+path_start(self.path_enter, self.path_spd, path_action_stop, false);
 
 // Phase 0
 bhpg_pattern_init(2, 10, 0, 8, 2560, 20, 2, 1, 50, 20, 0, 0, 0, 0);

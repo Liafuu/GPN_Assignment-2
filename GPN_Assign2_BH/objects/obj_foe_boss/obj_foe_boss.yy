@@ -8,16 +8,14 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,},
   ],
   "managed": true,
-  "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_control","path":"objects/obj_control/obj_control.yy",},"propertyId":{"name":"health","path":"objects/obj_control/obj_control.yy",},"value":"3000",},
-  ],
+  "overriddenProperties": [],
   "parent": {
     "name": "Special",
     "path": "folders/Objects/Foes/Special.yy",
   },
   "parentObjectId": {
-    "name": "obj_control",
-    "path": "objects/obj_control/obj_control.yy",
+    "name": "obj_foe",
+    "path": "objects/obj_foe/obj_foe.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

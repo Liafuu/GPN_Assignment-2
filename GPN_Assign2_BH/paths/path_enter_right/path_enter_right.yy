@@ -1,7 +1,7 @@
 {
   "resourceType": "GMPath",
   "resourceVersion": "1.0",
-  "name": "path_enter_top_stops",
+  "name": "path_enter_right",
   "closed": false,
   "kind": 0,
   "parent": {
@@ -9,9 +9,10 @@
     "path": "folders/Objects/Foes/Movement.yy",
   },
   "points": [
-    {"speed":30.0,"x":0.0,"y":-2944.0,},
+    {"speed":30.0,"x":4096.0,"y":0.0,},
     {"speed":30.0,"x":0.0,"y":0.0,},
-    {"speed":50.0,"x":0.0,"y":350.0,},
+    {"speed":50.0,"x":-1024.0,"y":0.0,},
+    {"speed":50.0,"x":-4096.0,"y":0.0,},
   ],
   "precision": 4,
 }
