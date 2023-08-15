@@ -7,7 +7,9 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_foe","path":"objects/obj_foe/obj_foe.yy",},"propertyId":{"name":"health","path":"objects/obj_foe/obj_foe.yy",},"value":"15",},
+  ],
   "parent": {
     "name": "Foes",
     "path": "folders/Objects/Foes.yy",

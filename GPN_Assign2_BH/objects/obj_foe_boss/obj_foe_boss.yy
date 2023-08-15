@@ -8,10 +8,13 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,},
   ],
   "managed": true,
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_foe","path":"objects/obj_foe/obj_foe.yy",},"propertyId":{"name":"health","path":"objects/obj_foe/obj_foe.yy",},"value":"2500",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_foe","path":"objects/obj_foe/obj_foe.yy",},"propertyId":{"name":"path_enter","path":"objects/obj_foe/obj_foe.yy",},"value":"path_enter_boss",},
+  ],
   "parent": {
-    "name": "Special",
-    "path": "folders/Objects/Foes/Special.yy",
+    "name": "Foes",
+    "path": "folders/Objects/Foes.yy",
   },
   "parentObjectId": {
     "name": "obj_foe",
