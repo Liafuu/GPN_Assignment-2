@@ -4,6 +4,7 @@ key_right = keyboard_check(vk_right);
 key_up = keyboard_check(vk_up);
 key_down = keyboard_check(vk_down);
 key_focus = keyboard_check(vk_shift);
+key_bomb = keyboard_check(vk_space);
 
 // Checks if shift is pressed
 if (key_focus) {
