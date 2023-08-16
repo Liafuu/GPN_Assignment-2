@@ -63,10 +63,11 @@ self.PhaseChange = function() {
 }
 
 self.BulletChange = function() {
-	if (phase_2 == false) {
-		bhpg_pattern_init(3, 20, 270, 6, 2160, 5, 1.5, 1, 15, 25, 32, 32, 0, 0);
-		bhpg_bullet_init(obj_bullet_spiral, 3, -0.1, 1);
-	} else if (phase_3 == false) {} 
+	if (phase_2 == false) {} 
+	else if (phase_3 == false) {
+		bhpg_pattern_init(3, 15, 0, 8, 2560, 20, 3, 1, 50, 10, 0, 0, 0, 0);
+		bhpg_bullet_init(obj_bullet_main, 3, 0, 0);
+	} 
 	else if (phase_4 == false) { 
 		bhpg_pattern_init(3, 25	, 0, 12, 4320, 1, 1.50, 1, 30, 15, 32, 32, 0, 0);
 		bhpg_bullet_init(obj_bullet_main, 1.8, 0, 0);
@@ -92,5 +93,5 @@ self.OnDamage = function(bullet) {
 path_start(self.path_enter, self.path_spd, path_action_stop, false);
 
 // Phase 0
-bhpg_pattern_init(2, 10, 0, 8, 2560, 20, 3, 1, 50, 15, 0, 0, 0, 0);
+bhpg_pattern_init(2, 10, 0, 8, 2560, 20, 3, 1, 50, 12, 0, 0, 0, 0);
 bhpg_bullet_init(obj_bullet_main, 3, 0, 0);

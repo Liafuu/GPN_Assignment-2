@@ -13,7 +13,7 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"bb2f1fdf-de30-4b51-81aa-a1b5e4c36891",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"eec9a672-6f6a-4226-80d7-767dab96a75e",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -23,7 +23,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"bf1ed4d5-b5d7-4135-9043-45b129098f70","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 4,
+  "origin": 9,
   "parent": {
     "name": "Player",
     "path": "folders/Sprites/Player.yy",
@@ -54,12 +54,12 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"bb2f1fdf-de30-4b51-81aa-a1b5e4c36891","path":"sprites/spr_player_hitbox/spr_player_hitbox.yy",},},},"Disabled":false,"id":"1d149d96-ee5d-43a3-920a-c1ebe0f9349d","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"eec9a672-6f6a-4226-80d7-767dab96a75e","path":"sprites/spr_player_hitbox/spr_player_hitbox.yy",},},},"Disabled":false,"id":"d1b86376-0cbb-44aa-83f1-0e7f4b1f6ae2","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 5,
+    "xorigin": 6,
     "yorigin": 5,
   },
   "swatchColours": null,

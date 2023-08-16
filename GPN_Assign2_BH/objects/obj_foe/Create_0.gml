@@ -23,7 +23,7 @@ self.OnDamage = function(bullet) {
 	}
 	
 	// Destroys the bullet in contact
-	instance_destroy(bullet);
+	if (bullet.pierce == false) {instance_destroy(bullet)};
 	if (self.health <= 0) {
 		self.Die();
 	}

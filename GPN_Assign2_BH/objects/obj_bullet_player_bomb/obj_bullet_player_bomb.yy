@@ -4,6 +4,7 @@
   "name": "obj_bullet_player_bomb",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -31,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_bullet_test",
-    "path": "sprites/spr_bullet_test/spr_bullet_test.yy",
+    "name": "spr_bullet_pbomb_1",
+    "path": "sprites/spr_bullet_pbomb_1/spr_bullet_pbomb_1.yy",
   },
   "spriteMaskId": null,
   "visible": true,
