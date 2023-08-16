@@ -1,5 +1,7 @@
 event_inherited();
 
+self.seen_in_room = false;
+
 // Method for foe dying
 self.Die = function() {
 	if (will_drop) {
@@ -10,11 +12,15 @@ self.Die = function() {
 	instance_destroy();
 }
 
-// Taking Damage
+// Taking damage in contact with bullet
 self.OnDamage = function(bullet) {
 	
-	// Takes damage
-	self.health -= bullet.damage;
+	// Taking damage
+	if (path_stop && self.path_position == 1) {
+		self.health -= bullet.damage;
+	} else if (!path_stop) {
+		self.health -= bullet.damage;
+	}
 	
 	// Destroys the bullet in contact
 	instance_destroy(bullet);

@@ -2,7 +2,6 @@ event_inherited();
 
 // To prevent friendly fire
 friendly = true;
-hitbox = true;
 
 // Movement
 key_hor = 0;
@@ -52,7 +51,7 @@ self.OnCollection = function(life) {
 
 // Resets spawn and destroy all bullets on screen
 self.Die = function() {
-	instance_destroy(obj_bullet_main);
+	instance_destroy(obj_bullet);
 }
 
 

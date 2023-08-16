@@ -8,14 +8,16 @@ healthbar_height = 21;
 // Shot cooldown for phase 3
 shot_per_sec = 8;
 shot_per_sec_2 = 0.35;
-last_shot_time = 0;
-last_shot_time_2 = 0.1;
+shot_per_sec_3 = 0.1;
 
-// Phases
-phase_0 = false;
-phase_1 = false;
-phase_2 = false;
-phase_3 = false;
+last_shot_time = 0;
+last_shot_time_2 = 0;
+last_shot_time_3 = 0;
+
+// Checks
+i = 0;
+p = 0;
+i2 = 0;
 
 // Set the angle to target player
 self.Aim = function(player) {
@@ -36,20 +38,26 @@ self.PhaseChange = function() {
 		self.max_health = 2200;
 		
 		phase_1 = true;
-		instance_destroy(obj_bullet_main);
+		instance_destroy(obj_bullet);
 	} else if (phase_2 == false) {
 		self.health = 2500;
 		self.max_health = 2500;
 		
 		phase_2 = true;
-		instance_destroy(obj_bullet_main);
+		instance_destroy(obj_bullet);
 	} else if (phase_3 == false) {
 		self.health = 3000;
 		self.max_health = 3000;
 		
 		phase_3 = true;
-		instance_destroy(obj_bullet_main);
-	} else { 
+		instance_destroy(obj_bullet);
+	} else if (phase_4 == false) { 
+		self.health = 8000;
+		self.max_health = 8000;
+		
+		phase_4 = true;
+		instance_destroy(obj_bullet);
+	} else {
 		self.Die();
 	}
 }
@@ -57,12 +65,12 @@ self.PhaseChange = function() {
 self.BulletChange = function() {
 	if (phase_2 == false) {
 		bhpg_pattern_init(3, 20, 270, 6, 2160, 5, 1.5, 1, 15, 25, 32, 32, 0, 0);
-		bhpg_bullet_init(obj_foe_bullet, 3, -0.1, 1);
-	} else if (phase_3 == false) {
-	} else { 
+		bhpg_bullet_init(obj_bullet_spiral, 3, -0.1, 1);
+	} else if (phase_3 == false) {} 
+	else if (phase_4 == false) { 
 		bhpg_pattern_init(3, 25	, 0, 12, 4320, 1, 1.50, 1, 30, 15, 32, 32, 0, 0);
-		bhpg_bullet_init(obj_foe_bullet, 1.8, 0, 0);
-	}
+		bhpg_bullet_init(obj_bullet_main, 1.8, 0, 0);
+	} else { }
 }
 
 // Taking Damage
@@ -84,5 +92,5 @@ self.OnDamage = function(bullet) {
 path_start(self.path_enter, self.path_spd, path_action_stop, false);
 
 // Phase 0
-bhpg_pattern_init(2, 10, 0, 8, 2560, 20, 2, 1, 50, 20, 0, 0, 0, 0);
-bhpg_bullet_init(obj_foe_bullet, 3, 0, 0);
+bhpg_pattern_init(2, 10, 0, 8, 2560, 20, 3, 1, 50, 15, 0, 0, 0, 0);
+bhpg_bullet_init(obj_bullet_main, 3, 0, 0);

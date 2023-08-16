@@ -1,7 +1,8 @@
-event_inherited();
-
 // Initiates the shots
-bhpg_pattern_step();
-
+if (path_stop && self.path_position == 1) {
+	bhpg_pattern_step();
+} else if (!path_stop) {
+	bhpg_pattern_step();
+}
 
 

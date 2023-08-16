@@ -8,11 +8,11 @@
   ],
   "managed": true,
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_foe","path":"objects/obj_foe/obj_foe.yy",},"propertyId":{"name":"health","path":"objects/obj_foe/obj_foe.yy",},"value":"300",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_foe","path":"objects/obj_foe/obj_foe.yy",},"propertyId":{"name":"health","path":"objects/obj_foe/obj_foe.yy",},"value":"500",},
   ],
   "parent": {
-    "name": "Foes",
-    "path": "folders/Objects/Foes.yy",
+    "name": "Spiral",
+    "path": "folders/Objects/Foes/Spiral.yy",
   },
   "parentObjectId": {
     "name": "obj_foe",
@@ -34,8 +34,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_foe_spiral",
-    "path": "sprites/spr_foe_spiral/spr_foe_spiral.yy",
+    "name": "spr_fairy_spiral",
+    "path": "sprites/spr_fairy_spiral/spr_fairy_spiral.yy",
   },
   "spriteMaskId": null,
   "visible": true,

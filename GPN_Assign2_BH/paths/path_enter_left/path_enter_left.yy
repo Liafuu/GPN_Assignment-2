@@ -6,7 +6,7 @@
   "kind": 0,
   "parent": {
     "name": "Movement",
-    "path": "folders/Objects/Foes/Movement.yy",
+    "path": "folders/Objects/Movement.yy",
   },
   "points": [
     {"speed":80.0,"x":-512.0,"y":0.0,},

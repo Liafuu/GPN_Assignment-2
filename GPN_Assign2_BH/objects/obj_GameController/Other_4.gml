@@ -1,7 +1,5 @@
 level = new Level()
-level.SendWave()
-
-
+level.SendFirstWave();
 
 
 

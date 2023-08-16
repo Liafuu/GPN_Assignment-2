@@ -1,9 +1,7 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Override
 
+// Draws ownself
 draw_self();
-
-
 
 
 

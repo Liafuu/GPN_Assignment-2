@@ -1,14 +1,39 @@
-event_inherited();
-
-// Initiates the shots
-if(true) {
+if(!path_stop) {
 	if (last_shot_time + 1 / shot_per_sec <= current_time / 1000) {
+		// First set of bullets
 		self.Aim(obj_player_hitbox.id);
-		
-		bhpg_pattern_init(1, 20, shot_angle, 1, 90, 0, 0, 1, 0, 15, 0, 0, 0, 0);
-		bhpg_bullet_init(obj_foe_bullet_t, 5, 0, 0);
+		bhpg_pattern_init(2, 20, shot_angle, 1, 0, 0, 0, 1, 0, 15, 0, 0, random_x, random_y);
+		bhpg_bullet_init(obj_bullet_target, 5, 0, 0);
 		bhpg_pattern_step();
-		last_shot_time = current_time / 1000;
+		
+		// Only enables the second set of bullets if double_shot is true
+		if (double_shot == true) {
+			// Second set of bullets
+			self.Aim(obj_player_hitbox.id);
+			bhpg_pattern_init(2, 20, shot_angle, 1, 0, 0, 0, 1, 0, 15, 0, 0, random_x, random_y);
+			bhpg_bullet_init(obj_bullet_target, 5, 0, 0);
+			bhpg_pattern_step();
+		}
+		
+		last_shot_time = current_time / 1000; // Sets the timer for the next shot
+	}
+} else if (path_stop && self.path_position == 1) { // Only able to shoot if path_stop is true and path has stopped
+	if (last_shot_time + 1 / shot_per_sec <= current_time / 1000) {
+		// First set of bullets
+		self.Aim(obj_player_hitbox.id);
+		bhpg_pattern_init(2, 20, shot_angle, 1, 0, 0, 0, 1, 0, 15, 0, 0, random_x, random_y);
+		bhpg_bullet_init(obj_bullet_target, 5, 0, 0);
+		bhpg_pattern_step();
+		
+		if (double_shot == true) {
+			// Second set of bullets
+			self.Aim(obj_player_hitbox.id);
+			bhpg_pattern_init(2, 20, shot_angle, 1, 0, 0, 0, 1, 0, 15, 0, 0, random_x, random_y);
+			bhpg_bullet_init(obj_bullet_target, 5, 0, 0);
+			bhpg_pattern_step();
+		}
+		
+		last_shot_time = current_time / 1000; //Sets the timer for the next shot
 	}
 }
 
