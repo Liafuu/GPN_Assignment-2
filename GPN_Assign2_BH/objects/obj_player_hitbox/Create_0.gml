@@ -14,7 +14,7 @@ player_spd = 1;
 self.health = 5;
 self.bomb = 3;
 self.iframe_time = 0;
-self.iframe_dura = 6;
+self.iframe_dura = 7;
 
 
 // Invincibility frames
@@ -27,21 +27,14 @@ self.OnDamage = function(bullet) {
 	if (self.Invuln()) {return;} 
 	
 	// Takes damage
-	self.health -= bullet.damage;
 	self.Die();
-	
-	self.iframe_time = current_time / 1000;
 }
 
 // Taking contact damage
 self.OnEntityContact = function(entity) {
 	if (self.Invuln()) {return;}
 	
-	// Takes damage
-	self.health --;
 	self.Die();
-	
-	self.iframe_time = current_time / 1000;
 }
 
 // Collecting lives
@@ -52,7 +45,21 @@ self.OnCollection = function(life) {
 
 // Resets spawn and destroy all bullets on screen
 self.Die = function() {
-	instance_destroy(obj_bullet);
+	if (instance_number(obj_death_anim) < 1) {
+		instance_create(self.x, self.y, obj_death_anim);
+	}
+	
+	if (obj_death_anim.image_alpha <= 0.1) {
+		instance_destroy(obj_bullet);
+		self.x = 448;
+		self.y = 800;
+		
+		obj_player.x = 448;
+		obj_player.y = 800;
+		
+		self.health --;
+		self.iframe_time = current_time / 1000;
+	}
 }
 
 
