@@ -13,6 +13,7 @@ for (l = 0; l < (options_count + _desc); l++) {
 		var _str = options[l-_desc][0]
 		if (hover == l - _desc) {
 			draw_set_colour(c_red);
+			if (hover == 2) {draw_set_color(c_grey); } //aight xiexie
 			_str = hovermarker + _str;
 		}
 		draw_text(x, y + l * heightLine, _str);

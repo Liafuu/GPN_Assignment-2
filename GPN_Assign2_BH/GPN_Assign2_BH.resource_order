@@ -88,6 +88,7 @@
     {"name":"__init_global","order":5,"path":"scripts/__init_global/__init_global.yy",},
     {"name":"obj_pickup","order":1,"path":"objects/obj_pickup/obj_pickup.yy",},
     {"name":"path_enter_top_curved_left","order":4,"path":"paths/path_enter_top_curved_left/path_enter_top_curved_left.yy",},
+    {"name":"rm_credits","order":2,"path":"rooms/rm_credits/rm_credits.yy",},
     {"name":"menu","order":2,"path":"scripts/menu/menu.yy",},
     {"name":"obj_bullet_main","order":2,"path":"objects/obj_bullet_main/obj_bullet_main.yy",},
     {"name":"spr_foe_spread","order":1,"path":"sprites/spr_foe_spread/spr_foe_spread.yy",},

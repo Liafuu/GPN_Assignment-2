@@ -127,6 +127,7 @@
     {"id":{"name":"obj_pickup","path":"objects/obj_pickup/obj_pickup.yy",},},
     {"id":{"name":"path_enter_top_curved_left","path":"paths/path_enter_top_curved_left/path_enter_top_curved_left.yy",},},
     {"id":{"name":"obj_foe_spread","path":"objects/obj_foe_spread/obj_foe_spread.yy",},},
+    {"id":{"name":"rm_credits","path":"rooms/rm_credits/rm_credits.yy",},},
     {"id":{"name":"obj_foe_target_right","path":"objects/obj_foe_target_right/obj_foe_target_right.yy",},},
     {"id":{"name":"menu","path":"scripts/menu/menu.yy",},},
     {"id":{"name":"obj_bullet_main","path":"objects/obj_bullet_main/obj_bullet_main.yy",},},
@@ -151,6 +152,7 @@
     {"roomId":{"name":"rm_stage","path":"rooms/rm_stage/rm_stage.yy",},},
     {"roomId":{"name":"rm_debugging","path":"rooms/rm_debugging/rm_debugging.yy",},},
     {"roomId":{"name":"bhpg_test","path":"rooms/bhpg_test/bhpg_test.yy",},},
+    {"roomId":{"name":"rm_credits","path":"rooms/rm_credits/rm_credits.yy",},},
   ],
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},

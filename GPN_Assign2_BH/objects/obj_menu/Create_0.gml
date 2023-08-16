@@ -1,8 +1,8 @@
 Menu(x, y, [
-	["Start Game", StartGame()],
+	["Start Game", -1],
 	["Credits", -1],
 	["Controls", -1],
-	["Quit", game_end]
+	["Quit", -1]
 		   ], "ded");
 
 
