@@ -6,18 +6,21 @@ healthbar_width = 91;
 healthbar_height = 21;
 
 // Shot cooldown for phase 3
-shot_per_sec = 8;
-shot_per_sec_2 = 0.35;
-shot_per_sec_3 = 0.1;
+shot_per_sec = 6;
+shot_per_sec_2 = 6;
+shot_per_sec_3 = 6;
+shot_per_sec_4 = 6;
 
 last_shot_time = 0;
 last_shot_time_2 = 0;
 last_shot_time_3 = 0;
+last_shot_time_4 = 0;
 
 // Checks
 i = 0;
-p = 0;
 i2 = 0;
+i3 = 0;
+i4 = 0;
 
 // Die function
 self.Die = function() {
@@ -39,43 +42,21 @@ self.Aim = function(player) {
 
 // Phase Changing
 self.PhaseChange = function() {
-	if (phase_1 == false) {
-		self.health = 2200;
-		self.max_health = 2200;
-		
-		phase_1 = true;
-		instance_destroy(obj_bullet);
-	} else if (phase_1 == true) {
-		self.health = 2500;
-		self.max_health = 2500;
-		
-		phase_2 = true;
-		instance_destroy(obj_bullet);
-	} else {
-		self.Die();
+	switch (phase) {
+		case 0: self.health = 2500; self.max_health = 2500; phase++; instance_destroy(obj_bullet); break;
+		case 1: instance_destroy(obj_boss_summon); path_start(self.path_exit, self.path_spd + 3, path_action_stop, false); break;
 	}
 }
 
 self.BulletChange = function() {
-	if (phase_2 == false) {i = 0; i2 = 0;} 
-	else if (phase_3 == false) {
-		bhpg_pattern_init(3, 15, 0, 8, 2560, 20, 3, 1, 50, 10, 0, 0, 0, 0);
-		bhpg_bullet_init(obj_bullet_main, 3, 0, 0);
-		i = 0;
-		i2 = 0;
-	} 
-	else if (phase_4 == false) { 
-		path_start(self.path_enter, self.path_spd, path_action_stop, false);
-		
-		bhpg_pattern_init(1, 0, 0, 5, 1800, 0, 0.3, 1, 10, 18, 0, 0, 0, 0);
-		bhpg_bullet_init(obj_bullet_changing, 2, -0.10, 0);
-		i = 0;
-		i2 = 0;
-	} else { 
-		path_start(self.path_exit, self.path_spd, path_action_stop, false);
-		
-		i = 0;
-		i2 = 0;
+	switch (phase) {
+		case 1: 
+		instance_create (self.x - 64, self.y - 64 , obj_boss_summon)
+		instance_create (self.x + 64, self.y - 64 , obj_boss_summon)
+		instance_create (self.x - 64, self.y + 64 , obj_boss_summon)
+		instance_create (self.x + 64, self.y + 64 , obj_boss_summon)
+		break;
+		case 2: break;
 	}
 }
 
@@ -98,5 +79,5 @@ self.OnDamage = function(bullet) {
 path_start(self.path_enter, self.path_spd, path_action_stop, false);
 
 // Phase 0
-bhpg_pattern_init(2, 10, 0, 8, 2560, 20, 3, 1, 50, 12, 0, 0, 0, 0);
+bhpg_pattern_init(1, 0, 0, 10, 3600, 0, 1, 1, 30, 12, 32, 32, 0, 0);
 bhpg_bullet_init(obj_bullet_main, 3, 0, 0);

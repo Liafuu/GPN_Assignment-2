@@ -17,6 +17,7 @@ if (phase == 1) {
 		bhpg_pattern_step();
 		
 		last_shot_time_2 = current_time / 1000; }
+		
 } else if (phase == 4 && path_position == 1) {
 	if (last_shot_time + 1 / shot_per_sec <= current_time / 1000) {
 		// First Set
