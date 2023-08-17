@@ -79,5 +79,5 @@ self.OnDamage = function(bullet) {
 path_start(self.path_enter, self.path_spd, path_action_stop, false);
 
 // Phase 0
-bhpg_pattern_init(1, 0, 0, 10, 3600, 0, 1, 1, 30, 12, 32, 32, 0, 0);
+bhpg_pattern_init(1, 0, 0, 20, 7200, 0, 1, 1, 30, 12, 32, 32, 0, 0);
 bhpg_bullet_init(obj_bullet_main, 3, 0, 0);

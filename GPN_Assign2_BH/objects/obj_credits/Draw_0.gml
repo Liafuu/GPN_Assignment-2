@@ -2,6 +2,9 @@ draw_set_color(c_black);
 draw_set_font(MainFontBig);
 draw_text((room_width / 2) - 50, 64, "Credits");
 
+draw_set_font(MainFont);
+draw_text((room_width / 2) - 110, 105, "Press esc to leave.");
+
 // Credit for Sprites
 draw_set_font(MainFont);
 draw_text(112, 155, "Sprites");

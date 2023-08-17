@@ -1,5 +1,7 @@
 // Destroys the instance outside of the room
-instance_destroy();
+if (self.seen_in_room) {
+	instance_destroy();
+}
 
 
 

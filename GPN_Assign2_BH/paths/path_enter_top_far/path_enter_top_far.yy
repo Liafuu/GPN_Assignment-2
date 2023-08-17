@@ -9,7 +9,7 @@
     "path": "folders/Objects/Movement.yy",
   },
   "points": [
-    {"speed":70.0,"x":0.0,"y":-256.0,},
+    {"speed":70.0,"x":0.0,"y":-1280.0,},
     {"speed":70.0,"x":0.0,"y":1280.0,},
   ],
   "precision": 4,
