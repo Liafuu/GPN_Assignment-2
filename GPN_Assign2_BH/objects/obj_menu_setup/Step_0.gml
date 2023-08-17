@@ -18,9 +18,10 @@ if (hover < 0) {hover = options_count - 1;}
 if ((mouse_check_button_pressed(mb_left) && mouseOver) || keyboard_check_pressed(vk_enter)) {
 	switch (hover) {
 		case 0: StartGame(); break;
-		case 1: Credits(); break;
+		case 1: Story(); break;
 		case 2: Controls(); break;
-		case 3: game_end(); break;
+		case 3: Credits(); break;
+		case 4: game_end(); break;
 	}
 }
 

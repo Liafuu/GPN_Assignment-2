@@ -33,3 +33,7 @@ function Credits() {
 function Controls() {
 	room_goto(rm_controls);
 }
+
+function Story() {
+	room_goto(rm_story);
+}
