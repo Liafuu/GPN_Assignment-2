@@ -1,9 +1,0 @@
-desc = story_desc;
-
-
-
-
-
-
-
-
