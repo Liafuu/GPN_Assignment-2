@@ -149,6 +149,7 @@
     {"id":{"name":"obj_bullet_main","path":"objects/obj_bullet_main/obj_bullet_main.yy",},},
     {"id":{"name":"spr_foe_spread","path":"sprites/spr_foe_spread/spr_foe_spread.yy",},},
     {"id":{"name":"spr_player_hitbox","path":"sprites/spr_player_hitbox/spr_player_hitbox.yy",},},
+    {"id":{"name":"snd_stage_bgm","path":"sounds/snd_stage_bgm/snd_stage_bgm.yy",},},
     {"id":{"name":"Bullet_Hell_Pattern_Generator","path":"extensions/Bullet_Hell_Pattern_Generator/Bullet_Hell_Pattern_Generator.yy",},},
     {"id":{"name":"obj_foe_spiral","path":"objects/obj_foe_spiral/obj_foe_spiral.yy",},},
     {"id":{"name":"obj_bullet_spiral","path":"objects/obj_bullet_spiral/obj_bullet_spiral.yy",},},

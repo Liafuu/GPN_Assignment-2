@@ -104,6 +104,7 @@
     {"name":"obj_bullet_main","order":2,"path":"objects/obj_bullet_main/obj_bullet_main.yy",},
     {"name":"spr_foe_spread","order":1,"path":"sprites/spr_foe_spread/spr_foe_spread.yy",},
     {"name":"spr_player_hitbox","order":3,"path":"sprites/spr_player_hitbox/spr_player_hitbox.yy",},
+    {"name":"snd_stage_bgm","order":1,"path":"sounds/snd_stage_bgm/snd_stage_bgm.yy",},
     {"name":"obj_bullet_spiral","order":5,"path":"objects/obj_bullet_spiral/obj_bullet_spiral.yy",},
     {"name":"MainFontSmall","order":2,"path":"fonts/MainFontSmall/MainFontSmall.yy",},
     {"name":"spr_life_border","order":2,"path":"sprites/spr_life_border/spr_life_border.yy",},
