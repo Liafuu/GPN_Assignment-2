@@ -4,12 +4,13 @@
   "name": "obj_menu",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Menu",
-    "path": "folders/Objects/Menu.yy",
+    "name": "Menu and Rooms",
+    "path": "folders/Objects/Menu and Rooms.yy",
   },
   "parentObjectId": null,
   "persistent": false,

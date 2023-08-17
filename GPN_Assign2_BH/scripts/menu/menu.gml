@@ -13,7 +13,6 @@ function Menu(_x, _y, _options, _description = -1) {
 		if (_description != -1) {width = max(width, string_width(_description))};
 		for (var i = 0; i < options_count; i++) {
 			width = max(width, string_width(_options[i][0])); }
-		width += string_width(hovermarker);
 		
 		heightLine = 50;
 		height = heightLine * (options_count + !(description == -1));
