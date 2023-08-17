@@ -5,8 +5,8 @@
   "closed": false,
   "kind": 1,
   "parent": {
-    "name": "Movement",
-    "path": "folders/Objects/Movement.yy",
+    "name": "Paths",
+    "path": "folders/Paths.yy",
   },
   "points": [
     {"speed":70.0,"x":-128.0,"y":-128.0,},
