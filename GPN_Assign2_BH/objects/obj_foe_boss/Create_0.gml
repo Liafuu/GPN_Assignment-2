@@ -42,7 +42,7 @@ self.PhaseChange = function() {
 	switch (phase) {
 		case 0: self.health = 2200; self.max_health = 2200; phase++; instance_destroy(obj_bullet); break;
 		case 1: self.health = 2500; self.max_health = 2500; phase++; instance_destroy(obj_bullet); break;
-		case 2: self.health = 2000; self.max_health = 2000; phase++; instance_destroy(obj_bullet); break;
+		case 2: self.health = 2500; self.max_health = 2500; phase++; instance_destroy(obj_bullet); break;
 		case 3: self.health = 8000; self.max_health = 8000; phase++; instance_destroy(obj_bullet); break;
 		case 4: self.Die(); break;
 	}
@@ -59,7 +59,7 @@ self.BulletChange = function() {
 		
 		case 3: i = 0; i2 = 0;
 		path_start(self.path_enter, self.path_spd, path_action_stop, false);
-		bhpg_pattern_init(1, 0, 0, 4, 1440, 0, 0.1, 0, 10, 16, 0, 0, 0, 0);
+		bhpg_pattern_init(1, 0, 0, 4, 1440, 0, 0.2, 1, 10, 16, 0, 0, 0, 0);
 		bhpg_bullet_init(obj_bullet_changing, 2, -0.10, 0); break;
 		
 		case 4: i = 0; i2 = 0;

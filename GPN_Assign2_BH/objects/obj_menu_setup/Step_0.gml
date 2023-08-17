@@ -19,7 +19,7 @@ if ((mouse_check_button_pressed(mb_left) && mouseOver) || keyboard_check_pressed
 	switch (hover) {
 		case 0: StartGame(); break;
 		case 1: Credits(); break;
-		case 2: break;
+		case 2: Controls(); break;
 		case 3: game_end(); break;
 	}
 }

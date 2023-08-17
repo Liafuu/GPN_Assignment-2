@@ -14,7 +14,8 @@ last_bomb_time = 0;
 
 
 // Creates a bomb, clearing the screen and deal massive damage
-bombs = 3; // Bomb amount
+if (is_debug) {bombs = 99;}
+else {bombs = 3;}; // Bomb amount
 b = 0; // Index
 bomb_use = false; // Triggers the bomb shooting pattern if true
 

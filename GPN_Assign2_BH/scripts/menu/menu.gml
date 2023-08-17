@@ -30,3 +30,7 @@ function StartGame() {
 function Credits() {
 	room_goto(rm_credits);
 }
+
+function Controls() {
+	room_goto(rm_controls);
+}

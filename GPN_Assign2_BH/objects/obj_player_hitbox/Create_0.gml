@@ -10,7 +10,8 @@ focus = false;
 player_spd = 1;
 
 // Health, Bombs and IFrame duration
-self.health = 3;
+if (is_debug) {self.health = 99;} 
+else {self.health = 3};
 self.iframe_time = 0;
 self.iframe_dura = 6;
 self.dead = false;
@@ -61,7 +62,8 @@ Update = function() {
 		obj_player.y = ystart;
 		
 		self.health--; // Take damage
-		obj_player.bombs = 3; // Always have 3 bombs every life
+		if (self.health < 1 && !is_debug) { room_goto(rm_gameover); audio_stop_all(); }
+		if (!is_debug) {obj_player.bombs = 3}; // Always have 3 bombs every life
 		self.dead = false;
 		self.iframe_time = current_time / 1000;
 	}

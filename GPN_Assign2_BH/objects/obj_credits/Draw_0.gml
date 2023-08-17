@@ -27,6 +27,18 @@ draw_text(112, 495, "Backgrounds");
 
 draw_set_font(MainFontSmall);
 draw_text(112, 540, "Stage Background by ZUN");
-draw_text(100, 570, "Menu Background from wallpaperflare.com");
+draw_text(112, 570, "Menu Background from wallpaperflare.com");
+draw_text(112, 600, "Game over background from");
+draw_text(112, 630, "https://tinyurl.com/yeyvmyst");
 
 
+// Credit for Sounds / Music
+draw_set_color(c_white);
+draw_set_font(MainFont);
+draw_text(112, 685, "Music and Sounds");
+
+draw_set_font(MainFontSmall);
+draw_text(112, 730, "Death Sound by ZUN");
+draw_text(112, 770, "'Schrodinger's Bakeneko'");
+draw_text(112, 800, "By ZUN, Remixed by MarioGm734");
+draw_text(112, 830, "https://tinyurl.com/zh4haj65");
