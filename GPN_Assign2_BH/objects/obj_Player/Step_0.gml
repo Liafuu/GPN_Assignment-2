@@ -40,19 +40,19 @@ else {sprite_index = spr_player;}
 if (key_shoot && key_focus) {
 	if (last_shot_time + 1 / shot_per_sec <= current_time / 1000) {
 		// Shooting during Focus Mode
-		bhpg_pattern_init(1, 20, 90, 1, 90, 0, 0, 1, 30, 4, 0, 0, -20, -10);
+		bhpg_pattern_init(1, 0, 90, 1, 90, 0, 0, 1, 30, 4, 0, 0, -20, -10);
 		bhpg_bullet_init(obj_bullet_player_focus, 25, 0, 0);
 		bhpg_pattern_step();
 		
-		bhpg_pattern_init(1, 20, 90, 1, 90, 0, 0, 1, 30, 4, 0, 0, -8, -10);
+		bhpg_pattern_init(1, 0, 90, 1, 90, 0, 0, 1, 30, 4, 0, 0, -8, -10);
 		bhpg_bullet_init(obj_bullet_player_focus, 25, 0, 0);
 		bhpg_pattern_step();
 		
-		bhpg_pattern_init(1, 20, 90, 1, 90, 0, 0, 1, 30, 4, 0, 0, 8, -10);
+		bhpg_pattern_init(1, 0, 90, 1, 90, 0, 0, 1, 30, 4, 0, 0, 8, -10);
 		bhpg_bullet_init(obj_bullet_player_focus, 25, 0, 0);
 		bhpg_pattern_step();
 		
-		bhpg_pattern_init(1, 20, 90, 1, 90, 0, 0, 1, 30, 4, 0, 0, 20, -10);
+		bhpg_pattern_init(1, 0, 90, 1, 90, 0, 0, 1, 30, 4, 0, 0, 20, -10);
 		bhpg_bullet_init(obj_bullet_player_focus, 25, 0, 0);
 		bhpg_pattern_step();
 		last_shot_time = current_time / 1000;
@@ -68,9 +68,45 @@ if (key_shoot && key_focus) {
 }
 
 // Using the bombs
+if (key_bomb && key_focus && bomb_use == false && bomb_focus == false &&
+((last_bomb_time + 1 / bomb_cd) <= current_time / 1000) && bombs > 0) {self.Bomb(true)};
+
 if (key_bomb && bomb_use == false && 
-((last_bomb_time + 1 / bomb_cd) <= current_time / 1000) && bombs > 0) {self.Bomb()};
-if (bomb_use) {
+((last_bomb_time + 1 / bomb_cd) <= current_time / 1000) && bombs > 0) {self.Bomb(false)};
+
+if (bomb_focus && bomb_use) {
+	if (last_shot_time + 1 / (shot_per_sec + 15) <= current_time / 1000) {
+		if (b < 1) {instance_destroy(obj_bullet);}
+		// First set of bullets
+		bhpg_pattern_init(1, 0, 90, 1, 0, 0, 0, 1, 30, 4, 0, 0, random_range(-32, 32), random_range(-32, 32));
+		bhpg_bullet_init(obj_bullet_player_bomb_focus, 2, 0.2, 0);
+		bhpg_pattern_step();
+		
+		// Second set of bullets
+		bhpg_pattern_init(1, 0, 90, 1, 0, 0, 0, 1, 30, 4, 0, 0, random_range(-64, 64), random_range(-64, 64));
+		bhpg_bullet_init(obj_bullet_player_bomb_focus, 2, 0.2, 0);
+		bhpg_pattern_step();
+		
+		// Third set of bullets
+		bhpg_pattern_init(1, 0, 90, 1, 0, 0, 0, 1, 30, 4, 0, 0, random_range(-96, 96), random_range(-96, 96));
+		bhpg_bullet_init(obj_bullet_player_bomb_focus, 2, 0.2, 0);
+		bhpg_pattern_step();
+		
+		// Forth set of bullets
+		bhpg_pattern_init(1, 0, 90, 1, 0, 0, 0, 1, 30, 4, 0, 0, random_range(-128, 128), random_range(-128, 128));
+		bhpg_bullet_init(obj_bullet_player_bomb_focus, 2, 0.2, 0);
+		bhpg_pattern_step();
+		
+		// Makes the player invulnerable
+		if (b < 1) {obj_player_hitbox.iframe_time = (current_time / 1000); self.bombs --;}
+		b++; // Limits amount of bomb projectiles that will be shot
+		if (b > 22) {bomb_use = false; bomb_focus = false;}
+		last_shot_time = current_time / 1000;
+		last_bomb_time = current_time / 1000;
+	}
+	bomb_cd = 0.45;
+}
+else if (bomb_use) {
 	if (last_shot_time + 1 / (shot_per_sec + 10) <= current_time / 1000) {
 		if (b < 1) {instance_destroy(obj_bullet);}
 		// First set of bullets
@@ -91,4 +127,4 @@ if (bomb_use) {
 		last_bomb_time = current_time / 1000;
 	}
 	bomb_cd = 0.45;
-} else { bomb_use = false; }
+} else { bomb_use = false; bomb_focus = false;}

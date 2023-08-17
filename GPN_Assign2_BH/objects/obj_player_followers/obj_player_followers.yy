@@ -1,19 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_bullet_player",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-  ],
+  "name": "obj_player_followers",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Player Bullets",
-    "path": "folders/Objects/Bullets/Player Bullets.yy",
+    "name": "Player",
+    "path": "folders/Objects/Player.yy",
   },
   "parentObjectId": {
-    "name": "obj_bullet",
-    "path": "objects/obj_bullet/obj_bullet.yy",
+    "name": "obj_player",
+    "path": "objects/obj_player/obj_player.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

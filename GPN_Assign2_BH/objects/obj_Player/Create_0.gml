@@ -18,8 +18,10 @@ if (is_debug) {bombs = 99;}
 else {bombs = 3;}; // Bomb amount
 b = 0; // Index
 bomb_use = false; // Triggers the bomb shooting pattern if true
+bomb_focus = false;
 
-self.Bomb = function() {
+self.Bomb = function(focusing) {
+	if (focusing) {bomb_focus = true;}
 	bomb_use = true;
 	b = 0;
 }
