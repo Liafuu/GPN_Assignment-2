@@ -16,8 +16,13 @@ last_shot_time_3 = 0;
 
 // Checks
 i = 0;
-p = 0;
 i2 = 0;
+
+// Die function
+self.Die = function() {
+	instance_create(self.x + random_range(-64, 64), self.y + random_range(-64, 64), obj_death_anim);
+	instance_destroy();
+}
 
 // Set the angle to target player
 self.Aim = function(player) {
@@ -33,45 +38,33 @@ self.Aim = function(player) {
 
 // Phase Changing
 self.PhaseChange = function() {
-	if (phase_1 == false) {
-		self.health = 2200;
-		self.max_health = 2200;
-		
-		phase_1 = true;
-		instance_destroy(obj_bullet);
-	} else if (phase_2 == false) {
-		self.health = 2500;
-		self.max_health = 2500;
-		
-		phase_2 = true;
-		instance_destroy(obj_bullet);
-	} else if (phase_3 == false) {
-		self.health = 3000;
-		self.max_health = 3000;
-		
-		phase_3 = true;
-		instance_destroy(obj_bullet);
-	} else if (phase_4 == false) { 
-		self.health = 8000;
-		self.max_health = 8000;
-		
-		phase_4 = true;
-		instance_destroy(obj_bullet);
-	} else {
-		self.Die();
+	// Switches between each phase
+	switch (phase) {
+		case 0: self.health = 2200; self.max_health = 2200; phase++; instance_destroy(obj_bullet); break;
+		case 1: self.health = 2500; self.max_health = 2500; phase++; instance_destroy(obj_bullet); break;
+		case 2: self.health = 2000; self.max_health = 2000; phase++; instance_destroy(obj_bullet); break;
+		case 3: self.health = 8000; self.max_health = 8000; phase++; instance_destroy(obj_bullet); break;
+		case 4: self.Die(); break;
 	}
 }
 
 self.BulletChange = function() {
-	if (phase_2 == false) {} 
-	else if (phase_3 == false) {
+	switch (phase) {
+		// Changes the bullet pattern with every phase
+		case 1: i = 0; i2 = 0; break;
+		
+		case 2: i = 0; i2 = 0;
 		bhpg_pattern_init(3, 15, 0, 8, 2560, 20, 3, 1, 50, 10, 0, 0, 0, 0);
-		bhpg_bullet_init(obj_bullet_main, 3, 0, 0);
-	} 
-	else if (phase_4 == false) { 
-		bhpg_pattern_init(3, 25	, 0, 12, 4320, 1, 1.50, 1, 30, 15, 32, 32, 0, 0);
-		bhpg_bullet_init(obj_bullet_main, 1.8, 0, 0);
-	} else { }
+		bhpg_bullet_init(obj_bullet_main, 3, 0, 0); break;
+		
+		case 3: i = 0; i2 = 0;
+		path_start(self.path_enter, self.path_spd, path_action_stop, false);
+		bhpg_pattern_init(1, 0, 0, 5, 1800, 0, 0.1, 0, 10, 18, 0, 0, 0, 0);
+		bhpg_bullet_init(obj_bullet_changing, 2, -0.10, 0); break;
+		
+		case 4: i = 0; i2 = 0;
+		path_start(self.path_exit, self.path_spd, path_action_stop, false); break;
+	}
 }
 
 // Taking Damage

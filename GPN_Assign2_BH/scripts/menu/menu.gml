@@ -6,8 +6,8 @@ function Menu(_x, _y, _options, _description = -1) {
 		hovermarker = "* ";
 		
 		// Setup Size
-		margin = 15;
-		//draw_set_font();
+		margin = 35;
+		draw_set_font(MainFont);
 		
 		width = 1;
 		if (_description != -1) {width = max(width, string_width(_description))};
@@ -15,7 +15,7 @@ function Menu(_x, _y, _options, _description = -1) {
 			width = max(width, string_width(_options[i][0])); }
 		width += string_width(hovermarker);
 		
-		heightLine = 20;
+		heightLine = 50;
 		height = heightLine * (options_count + !(description == -1));
 		
 		widthFull = width + margin * 2;
@@ -25,4 +25,8 @@ function Menu(_x, _y, _options, _description = -1) {
 
 function StartGame() {
 	room_goto(rm_stage);
+}
+
+function Credits() {
+	room_goto(rm_credits);
 }

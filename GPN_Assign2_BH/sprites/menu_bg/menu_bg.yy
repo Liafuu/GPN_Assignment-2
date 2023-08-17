@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "menu_bg",
-  "bbox_bottom": 727,
+  "bbox_bottom": 363,
   "bbox_left": 0,
-  "bbox_right": 1455,
+  "bbox_right": 727,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8f687306-28c0-4e70-8cd7-6d8f431e9902",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"433ef65e-ab3d-4fc5-89ee-3de57a2908d6",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 728,
+  "height": 364,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"895b88d5-a850-4d16-8a54-d7f6d5d3c9ae","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"561356a7-5696-45a9-8c54-d13f52c6a975","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"8f687306-28c0-4e70-8cd7-6d8f431e9902","path":"sprites/menu_bg/menu_bg.yy",},},},"Disabled":false,"id":"f3e3afae-bff0-47e9-8151-de34f6d3bf32","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"433ef65e-ab3d-4fc5-89ee-3de57a2908d6","path":"sprites/menu_bg/menu_bg.yy",},},},"Disabled":false,"id":"d54e5faf-0ddd-4b40-9145-e1dfb22d0e18","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 1456,
+  "width": 728,
 }

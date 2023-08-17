@@ -1,7 +1,7 @@
 // Inherit the parent event
 event_inherited();
 
-damage = 1;
+damage = 2.5;
 pierce = true; // Allows the bullet to hit multiple targets
 friendly = true;
 

@@ -1,7 +1,9 @@
+draw_set_alpha(0.25);
 draw_sprite_stretched(spr_menu_button, 0, x-margin, y-margin, widthFull, heightFull);
 
+draw_set_alpha(1);
 draw_set_color(c_black);
-//draw_set_font();
+draw_set_font(MainFont);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 
@@ -13,7 +15,7 @@ for (l = 0; l < (options_count + _desc); l++) {
 		var _str = options[l-_desc][0]
 		if (hover == l - _desc) {
 			draw_set_colour(c_red);
-			if (hover == 2) {draw_set_color(c_grey); } //aight xiexie
+			// if (hover == 2) { draw_set_color(c_grey); }
 			_str = hovermarker + _str;
 		}
 		draw_text(x, y + l * heightLine, _str);

@@ -72,6 +72,7 @@ if (key_bomb && bomb_use == false &&
 ((last_bomb_time + 1 / bomb_cd) <= current_time / 1000) && bombs > 0) {self.Bomb()};
 if (bomb_use) {
 	if (last_shot_time + 1 / (shot_per_sec + 10) <= current_time / 1000) {
+		if (b < 1) {instance_destroy(obj_bullet);}
 		// First set of bullets
 		bhpg_pattern_init(1, 0, (30 * b), 16, 5760, 0, 0, 1, 30, 4, 32, 32, random_range(-64, 64), random_range(-64, 64));
 		bhpg_bullet_init(obj_bullet_player_bomb, 2, 0.2, 0);
@@ -83,11 +84,11 @@ if (bomb_use) {
 		bhpg_pattern_step();
 		
 		// Makes the player invulnerable
-		if (b < 1) {obj_player_hitbox.iframe_time = (current_time / 1000);}
+		if (b < 1) {obj_player_hitbox.iframe_time = (current_time / 1000); self.bombs--;}
 		b++; // Limits amount of bomb projectiles that will be shot
-		if (b > 15) {self.bombs--; bomb_use = false;}
+		if (b > 15) {bomb_use = false;}
 		last_shot_time = current_time / 1000;
 		last_bomb_time = current_time / 1000;
 	}
-	bomb_cd = 0.34;
+	bomb_cd = 0.45;
 } else { bomb_use = false; }

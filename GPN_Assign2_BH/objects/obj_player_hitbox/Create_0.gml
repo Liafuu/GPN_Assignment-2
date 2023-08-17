@@ -46,6 +46,7 @@ OnCollection = function(life) {
 Die = function() {
 	if (instance_number(obj_death_anim) = 0 && self.dead == false) {
 		instance_create(self.x, self.y, obj_death_anim);
+		obj_death_anim.player = true;
 	}
 }
 

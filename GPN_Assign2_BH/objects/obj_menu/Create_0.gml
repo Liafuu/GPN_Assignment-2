@@ -3,7 +3,7 @@ Menu(x, y, [
 	["Credits", -1],
 	["Controls", -1],
 	["Quit", -1]
-		   ], "ded");
+		   ]);
 
 
 
