@@ -45,6 +45,7 @@
   "ResourceOrderSettings": [
     {"name":"stage_bg","order":1,"path":"sprites/stage_bg/stage_bg.yy",},
     {"name":"bhpg_pattern_step","order":2,"path":"scripts/bhpg_pattern_step/bhpg_pattern_step.yy",},
+    {"name":"rm_story","order":8,"path":"rooms/rm_story/rm_story.yy",},
     {"name":"obj_bullet_changed","order":10,"path":"objects/obj_bullet_changed/obj_bullet_changed.yy",},
     {"name":"bhpg_pattern_init","order":1,"path":"scripts/bhpg_pattern_init/bhpg_pattern_init.yy",},
     {"name":"spr_foe_target","order":3,"path":"sprites/spr_foe_target/spr_foe_target.yy",},
@@ -113,6 +114,7 @@
     {"name":"snd_stage_bgm","order":1,"path":"sounds/snd_stage_bgm/snd_stage_bgm.yy",},
     {"name":"obj_bullet_spiral","order":5,"path":"objects/obj_bullet_spiral/obj_bullet_spiral.yy",},
     {"name":"MainFontSmall","order":2,"path":"fonts/MainFontSmall/MainFontSmall.yy",},
+    {"name":"rm_ending","order":7,"path":"rooms/rm_ending/rm_ending.yy",},
     {"name":"spr_life_border","order":2,"path":"sprites/spr_life_border/spr_life_border.yy",},
     {"name":"path_enter_top_curved_right","order":3,"path":"paths/path_enter_top_curved_right/path_enter_top_curved_right.yy",},
     {"name":"obj_credits","order":4,"path":"objects/obj_credits/obj_credits.yy",},
