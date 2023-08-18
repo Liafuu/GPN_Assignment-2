@@ -225,10 +225,10 @@
     {"id":{"name":"rm_stage","path":"rooms/rm_stage/rm_stage.yy",},},
   ],
   "RoomOrderNodes": [
+    {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"roomId":{"name":"rm_debugging","path":"rooms/rm_debugging/rm_debugging.yy",},},
     {"roomId":{"name":"rm_stage2","path":"rooms/rm_stage2/rm_stage2.yy",},},
     {"roomId":{"name":"rm_debugging_2","path":"rooms/rm_debugging_2/rm_debugging_2.yy",},},
-    {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"roomId":{"name":"rm_story2","path":"rooms/rm_story2/rm_story2.yy",},},
     {"roomId":{"name":"bhpg_test","path":"rooms/bhpg_test/bhpg_test.yy",},},
     {"roomId":{"name":"rm_story","path":"rooms/rm_story/rm_story.yy",},},
