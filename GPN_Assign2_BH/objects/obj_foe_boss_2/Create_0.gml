@@ -19,6 +19,16 @@ last_shot_time_3 = 0;
 i = 0;
 i2 = 0;
 
+// Dies
+self.Die = function() {
+	instance_destroy(obj_boss_summon_2);
+	instance_destroy(obj_boss_summon_3);
+	instance_destroy(obj_bullet);
+	
+	instance_create(self.x + random_range(-64, 64), self.y + random_range(-64, 64), obj_death_anim);
+	instance_destroy();
+}
+
 // Changes phase and their HP
 self.PhaseChange = function() {
 	// Switches between each phase
@@ -28,7 +38,7 @@ self.PhaseChange = function() {
 		case 2: self.health = 3000; self.max_health = 3000; phase++; instance_destroy(obj_bullet); break; // Goes up, Spell
 		case 3: self.health = 6000; self.max_health = 6000; phase++; instance_destroy(obj_bullet); break; // Spell
 		case 4: self.health = 6000; self.max_health = 6000; phase++; instance_destroy(obj_bullet); break; // Final Spell
-		case 5: instance_destroy(obj_boss_summon_2); instance_destroy(obj_boss_summon_3); self.Die(); break;
+		case 5: self.Die(); break;
 	}
 }
 

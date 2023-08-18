@@ -10,8 +10,7 @@ focus = false;
 player_spd = 1;
 
 // Health, Bombs and IFrame duration
-if (is_debug) {self.health = 99;} 
-else {self.health = 3};
+if (is_debug) {global.lives = 99;} 
 self.iframe_time = 0;
 self.iframe_dura = 6;
 self.dead = false;
@@ -39,7 +38,7 @@ OnEntityContact = function(entity) {
 
 // Collecting lives
 OnCollection = function(life) {
-	self.health++;
+	global.lives++;
 	instance_destroy(life);
 }
 
@@ -61,9 +60,9 @@ Update = function() {
 		obj_player.x = xstart;
 		obj_player.y = ystart;
 		
-		self.health--; // Take damage
-		if (self.health < 1 && !is_debug) { room_goto(rm_gameover); audio_stop_all(); }
-		if (!is_debug) {obj_player.bombs = 3}; // Always have 3 bombs every life
+		global.lives--; // Take damage
+		if (global.lives < 1 && !is_debug) { room_goto(rm_gameover); audio_stop_all(); }
+		global.bombs = 3; // Always have 3 bombs every life
 		self.dead = false;
 		self.iframe_time = current_time / 1000;
 	}
