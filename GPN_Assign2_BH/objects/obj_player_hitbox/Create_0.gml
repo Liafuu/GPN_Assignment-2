@@ -61,12 +61,6 @@ Update = function() {
 		obj_player.x = xstart;
 		obj_player.y = ystart;
 		
-		if (room_get_name != "rm_stage") {
-			show_debug_message("ello");
-			obj_player_followers.x = obj_player_hitbox.xstart;
-			obj_player_followers.y = obj_player_hitbox.ystart + 42;
-		}
-		
 		self.health--; // Take damage
 		if (self.health < 1 && !is_debug) { room_goto(rm_gameover); audio_stop_all(); }
 		if (!is_debug) {obj_player.bombs = 3}; // Always have 3 bombs every life
