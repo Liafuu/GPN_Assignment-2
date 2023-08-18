@@ -23,12 +23,12 @@ i2 = 0;
 self.PhaseChange = function() {
 	// Switches between each phase
 	switch (phase) {
-		case 0: self.health = 2000; self.max_health = 2000; phase++; instance_destroy(obj_bullet); break;
-		case 1: self.health = 2500; self.max_health = 2500; phase++; instance_destroy(obj_bullet); break;
-		case 2: self.health = 2500; self.max_health = 2500; phase++; instance_destroy(obj_bullet); break;
-		case 3: self.health = 8000; self.max_health = 8000; phase++; instance_destroy(obj_bullet); break;
-		case 4: break;
-		case 5: self.Die(); break;
+		case 0: self.health = 2000; self.max_health = 2000; phase++; instance_destroy(obj_bullet); break; // Goes bottom, Spell
+		case 1: self.health = 2000; self.max_health = 2000; phase++; instance_destroy(obj_bullet); break; // Bottom, Non-spell
+		case 2: self.health = 3000; self.max_health = 3000; phase++; instance_destroy(obj_bullet); break; // Goes up, Spell
+		case 3: self.health = 6000; self.max_health = 6000; phase++; instance_destroy(obj_bullet); break; // Spell
+		case 4: self.health = 6000; self.max_health = 6000; phase++; instance_destroy(obj_bullet); break; // Final Spell
+		case 5: instance_destroy(obj_boss_summon_2); instance_destroy(obj_boss_summon_3); self.Die(); break;
 	}
 }
 
@@ -46,10 +46,13 @@ self.BulletChange = function() {
 		case 2: i = 0; i2 = 0; break;
 		
 		case 3: i = 0; i2 = 0;
-		bhpg_pattern_init(1, 0, 0, 4, 1440, 0, 0.2, 1, 10, 16, 0, 0, 0, 0);
-		bhpg_bullet_init(obj_bullet_changing, 2, -0.10, 0); break;
+		path_start(self.path_exit, self.path_spd, path_action_stop, false);
+		break;
 		
-		case 4: i = 0; i2 = 0; break;
+		case 4: i = 0; i2 = 0; 
+		bhpg_pattern_init(1, 0, 0, 2, 360, 0, 0, 0, 0, 15, 32, 32, 0, 0);
+		bhpg_bullet_init(obj_bullet_spawn_big, 3, 0, 0);
+		break;
 		
 		case 5: i = 0; i2 = 0; break;
 	}
@@ -59,7 +62,9 @@ self.BulletChange = function() {
 self.OnDamage = function(bullet) {
 	
 	// Takes damage
-	if (path_position == 1) {
+	if (phase == 3 && instance_number(obj_boss_summon_2) == 2) {
+		self.health -= bullet.damage;
+	} else if (phase != 3 && path_position == 1) {
 		self.health -= bullet.damage;
 	}
 	

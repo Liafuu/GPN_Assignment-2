@@ -67,7 +67,7 @@ if (phase == 1) {
 		if (self.health <= 3000) {
 			// Seventh Set after hitting 3000 HP
 			self.Aim(obj_player_hitbox.id);
-			bhpg_pattern_init(1, 0, shot_angle, 1, 0, 0, 0, 1, 0, 3, 32, 32, random_x, random_y);
+			bhpg_pattern_init(1, 0, shot_angle, 1, 0, 0, 0, 1, 0, 3, 32, 32, 0, 0);
 			bhpg_bullet_init(obj_bullet_target_big, 2, 0, 0);
 			bhpg_pattern_step();
 		}
