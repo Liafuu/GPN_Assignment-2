@@ -11,7 +11,7 @@
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_foe","path":"objects/obj_foe/obj_foe.yy",},"propertyId":{"name":"path_enter","path":"objects/obj_foe/obj_foe.yy",},"value":"0",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_foe","path":"objects/obj_foe/obj_foe.yy",},"propertyId":{"name":"path_exit","path":"objects/obj_foe/obj_foe.yy",},"value":"0",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_foe","path":"objects/obj_foe/obj_foe.yy",},"propertyId":{"name":"health","path":"objects/obj_foe/obj_foe.yy",},"value":"50",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_foe","path":"objects/obj_foe/obj_foe.yy",},"propertyId":{"name":"health","path":"objects/obj_foe/obj_foe.yy",},"value":"49999",},
   ],
   "parent": {
     "name": "Foes",

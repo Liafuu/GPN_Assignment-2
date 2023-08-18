@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_bullet_test",
-    "path": "sprites/spr_bullet_test/spr_bullet_test.yy",
+    "name": "spr_bullet_foe",
+    "path": "sprites/spr_bullet_foe/spr_bullet_foe.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -6,8 +6,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Menu and Rooms",
-    "path": "folders/Objects/Menu and Rooms.yy",
+    "name": "Story",
+    "path": "folders/Objects/Story.yy",
   },
   "parentObjectId": null,
   "persistent": false,

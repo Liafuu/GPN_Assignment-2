@@ -1,5 +1,5 @@
 // Inherit the parent event
 event_inherited();
 
-damage = 2.5;
+damage = 3;
 friendly = true;

@@ -5,7 +5,7 @@ self.max_health = self.health
 healthbar_width = 91;
 healthbar_height = 21;
 
-// Shot cooldown for phase 3
+// Shot cooldown for phases
 shot_per_sec = 8;
 shot_per_sec_2 = 0.35;
 shot_per_sec_3 = 0.1;
@@ -21,6 +21,7 @@ i2 = 0;
 // Die function
 self.Die = function() {
 	instance_create(self.x + random_range(-64, 64), self.y + random_range(-64, 64), obj_death_anim);
+	instance_create(self.x, self.y, obj_pickup_stage1);
 	instance_destroy();
 }
 

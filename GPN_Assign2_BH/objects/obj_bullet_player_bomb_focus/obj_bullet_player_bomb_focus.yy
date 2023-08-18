@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_bullet_pfocus_2",
-    "path": "sprites/spr_bullet_pfocus_2/spr_bullet_pfocus_2.yy",
+    "name": "spr_bullet_pfocus_big",
+    "path": "sprites/spr_bullet_pfocus_big/spr_bullet_pfocus_big.yy",
   },
   "spriteMaskId": null,
   "visible": true,

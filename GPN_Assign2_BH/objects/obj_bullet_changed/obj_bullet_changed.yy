@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Bullets",
-    "path": "folders/Objects/Bullets.yy",
+    "name": "Special Bullets",
+    "path": "folders/Objects/Bullets/Special Bullets.yy",
   },
   "parentObjectId": {
     "name": "obj_bullet",

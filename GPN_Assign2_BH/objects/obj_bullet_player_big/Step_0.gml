@@ -1,4 +1,4 @@
-// Inherit the parent event
-event_inherited();
+speed += accel;
+direction += curve;
 
-self.image_angle += 0.2;
+image_angle += 20;
