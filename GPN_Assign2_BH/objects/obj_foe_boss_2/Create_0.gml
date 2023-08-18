@@ -43,9 +43,7 @@ self.BulletChange = function() {
 		bhpg_bullet_init(obj_bullet_spawn, 3, 0, 0);
 		break;
 		
-		case 2: i = 0; i2 = 0;
-		bhpg_pattern_init(3, 15, 0, 8, 2560, 20, 3, 1, 50, 10, 0, 0, 0, 0);
-		bhpg_bullet_init(obj_bullet_main, 3, 0, 0); break;
+		case 2: i = 0; i2 = 0; break;
 		
 		case 3: i = 0; i2 = 0;
 		bhpg_pattern_init(1, 0, 0, 4, 1440, 0, 0.2, 1, 10, 16, 0, 0, 0, 0);
