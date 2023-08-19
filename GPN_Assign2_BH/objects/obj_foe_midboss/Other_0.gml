@@ -4,6 +4,7 @@ if (seen_in_room) {
 	life_pickup.image_xscale = 4;
 	life_pickup.image_yscale = 4;
 	
+	ScoreCheck();
 	instance_destroy(self);
 }
 

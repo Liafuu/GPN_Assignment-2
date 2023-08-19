@@ -1,6 +1,10 @@
 // Inherit the parent event
 event_inherited();
 
+// Checks if player clears the phase deathless and bombless
+min_lives = 0;
+min_bombs = 0;
+
 // Max HP for Healthbar
 self.max_health = self.health
 healthbar_width = 91;
@@ -33,12 +37,22 @@ self.Die = function() {
 self.PhaseChange = function() {
 	// Switches between each phase
 	switch (phase) {
-		case 0: self.health = 2000; self.max_health = 2000; phase++; instance_destroy(obj_bullet); break; // Goes bottom, Spell
-		case 1: self.health = 2000; self.max_health = 2000; phase++; instance_destroy(obj_bullet); break; // Bottom, Non-spell
-		case 2: self.health = 3000; self.max_health = 3000; phase++; instance_destroy(obj_bullet); break; // Goes up, Spell
-		case 3: self.health = 6000; self.max_health = 6000; phase++; instance_destroy(obj_bullet); break; // Spell
-		case 4: self.health = 6000; self.max_health = 6000; phase++; instance_destroy(obj_bullet); break; // Final Spell
-		case 5: self.Die(); break;
+		case 0: self.health = 2000; self.max_health = 2000; ScoreCheck();
+		CheckLives(); phase++; instance_destroy(obj_bullet); break; // Goes bottom, Spell
+		
+		case 1: self.health = 2000; self.max_health = 2000; ScoreCheck();
+		CheckLives(); phase++; instance_destroy(obj_bullet); break; // Bottom, Non-spell
+		
+		case 2: self.health = 3000; self.max_health = 3000; ScoreCheck();
+		CheckLives(); phase++; instance_destroy(obj_bullet); break; // Goes up, Spell
+		
+		case 3: self.health = 6000; self.max_health = 6000; ScoreCheck();
+		CheckLives(); phase++; instance_destroy(obj_bullet); break; // Spell
+		
+		case 4: self.health = 6000; self.max_health = 6000; ScoreCheck();
+		CheckLives(); phase++; instance_destroy(obj_bullet); break; // Final Spell
+		
+		case 5: ScoreCheck(); self.Die(); break;
 	}
 }
 
@@ -96,6 +110,19 @@ self.Aim = function(player) {
 	// Set the shot angle
 	shot_angle = point_direction(self.x, self.y, target.x + random_range(2, 7), target.y + random_range(2, 7))
 }
+
+self.CheckLives = function() {
+	min_lives = global.lives;
+	min_bombs = global.bombs;
+}
+
+self.ScoreCheck = function() {
+	if (min_lives == global.lives && min_bombs == global.bombs) {global.score += score_given * 4}
+	else if (min_lives == global.lives) {global.score += score_given * 2}
+	else if (min_bombs == global.bombs) {global.score += score_given * 2}
+	else {global.score += score_given};
+}
+
 
 path_start(self.path_enter, self.path_spd, path_action_stop, false);
 

@@ -1,5 +1,9 @@
 event_inherited();
 
+// Checks if player clears the phase deathless and bombless
+min_lives = 0;
+min_bombs = 0;
+
 // Max HP for Healthbar
 self.max_health = self.health
 healthbar_width = 91;
@@ -22,12 +26,6 @@ i2 = 0;
 i3 = 0;
 i4 = 0;
 
-// Die function
-self.Die = function() {
-	instance_create(self.x + random_range(-64, 64), self.y + random_range(-64, 64), obj_death_anim);
-	instance_destroy();
-}
-
 // Set the angle to target player
 self.Aim = function(player) {
 	target = player;
@@ -43,8 +41,11 @@ self.Aim = function(player) {
 // Phase Changing
 self.PhaseChange = function() {
 	switch (phase) {
-		case 0: self.health = 2500; self.max_health = 2500; phase++; instance_destroy(obj_bullet); break;
-		case 1: instance_destroy(obj_boss_summon); path_start(self.path_exit, self.path_spd + 3, path_action_stop, false); break;
+		case 0: self.health = 2500; self.max_health = 2500; ScoreCheck(); 
+		CheckLives(); phase++; instance_destroy(obj_bullet); break;
+		
+		case 1: instance_destroy(obj_boss_summon);
+		path_start(self.path_exit, self.path_spd + 3, path_action_stop, false); break;
 	}
 }
 
@@ -56,6 +57,7 @@ self.BulletChange = function() {
 		instance_create (self.x - 64, self.y + 64 , obj_boss_summon)
 		instance_create (self.x + 64, self.y + 64 , obj_boss_summon)
 		break;
+		
 		case 2: break;
 	}
 }
@@ -74,6 +76,18 @@ self.OnDamage = function(bullet) {
 		self.PhaseChange();
 		self.BulletChange();
 	}
+}
+
+self.CheckLives = function() {
+	min_lives = global.lives;
+	min_bombs = global.bombs;
+}
+
+self.ScoreCheck = function() {
+	if (min_lives == global.lives && min_bombs == global.bombs) {global.score += score_given * 4}
+	else if (min_lives == global.lives) {global.score += score_given * 2}
+	else if (min_bombs == global.bombs) {global.score += score_given * 2}
+	else {global.score += score_given};
 }
 
 path_start(self.path_enter, self.path_spd, path_action_stop, false);

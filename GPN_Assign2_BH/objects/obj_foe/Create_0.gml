@@ -9,6 +9,8 @@ self.Die = function() {
 		life_pickup.image_xscale = 4;
 		life_pickup.image_yscale = 4;
 	}
+	
+	global.score += score_given;
 	instance_destroy();
 }
 

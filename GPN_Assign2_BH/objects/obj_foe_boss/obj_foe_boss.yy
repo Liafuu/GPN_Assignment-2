@@ -7,10 +7,12 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_control","path":"objects/obj_control/obj_control.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":1,"eventType":7,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_foe","path":"objects/obj_foe/obj_foe.yy",},"propertyId":{"name":"health","path":"objects/obj_foe/obj_foe.yy",},"value":"2500",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_foe","path":"objects/obj_foe/obj_foe.yy",},"propertyId":{"name":"score_given","path":"objects/obj_foe/obj_foe.yy",},"value":"25000",},
   ],
   "parent": {
     "name": "Bosses",

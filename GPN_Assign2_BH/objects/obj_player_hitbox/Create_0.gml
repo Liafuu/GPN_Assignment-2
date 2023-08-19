@@ -39,6 +39,7 @@ OnEntityContact = function(entity) {
 // Collecting lives
 OnCollection = function(life) {
 	global.lives++;
+	global.score += 10000;
 	instance_destroy(life);
 }
 

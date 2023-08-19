@@ -8,4 +8,6 @@ draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
 draw_set_font(GameFont);
 
+if (!in_story) { draw_text(32, 32, "Lives: " + string(global.lives)); }
 if (!in_story) { draw_text(32, 64, "Bombs: " + string(global.bombs)); }
+if (!in_story) { draw_text(32, 96, "Score: " + string(global.score)); }
