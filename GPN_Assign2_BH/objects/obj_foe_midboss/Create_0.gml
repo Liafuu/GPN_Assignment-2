@@ -84,7 +84,7 @@ self.CheckLives = function() {
 }
 
 self.ScoreCheck = function() {
-	if (min_lives == global.lives && min_bombs == global.bombs) {global.score += score_given * 4}
+	if (min_lives == global.lives && min_bombs == global.bombs) {global.score += score_given * 3}
 	else if (min_lives == global.lives) {global.score += score_given * 2}
 	else if (min_bombs == global.bombs) {global.score += score_given * 2}
 	else {global.score += score_given};

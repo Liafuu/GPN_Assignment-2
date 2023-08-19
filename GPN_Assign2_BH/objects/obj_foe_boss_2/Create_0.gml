@@ -69,16 +69,15 @@ self.BulletChange = function() {
 		
 		case 2: i = 0; i2 = 0; break;
 		
-		case 3: i = 0; i2 = 0;
+		case 3: i = 0; i2 = 0; score_given += 7500;
 		path_start(self.path_exit, self.path_spd, path_action_stop, false);
 		break;
 		
-		case 4: i = 0; i2 = 0; 
+		case 4: i = 0; i2 = 0; score_given += 7500;
 		bhpg_pattern_init(1, 0, 0, 2, 360, 0, 0, 0, 0, 15, 32, 32, 0, 0);
-		bhpg_bullet_init(obj_bullet_spawn_big, 3, 0, 0);
-		break;
+		bhpg_bullet_init(obj_bullet_spawn_big, 3, 0, 0); break;
 		
-		case 5: i = 0; i2 = 0; break;
+		case 5: i = 0; i2 = 0; score_given += 10000; break;
 	}
 }
 
@@ -117,7 +116,7 @@ self.CheckLives = function() {
 }
 
 self.ScoreCheck = function() {
-	if (min_lives == global.lives && min_bombs == global.bombs) {global.score += score_given * 4}
+	if (min_lives == global.lives && min_bombs == global.bombs) {global.score += score_given * 3}
 	else if (min_lives == global.lives) {global.score += score_given * 2}
 	else if (min_bombs == global.bombs) {global.score += score_given * 2}
 	else {global.score += score_given};
