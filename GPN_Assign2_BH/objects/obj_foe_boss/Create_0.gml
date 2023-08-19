@@ -24,7 +24,7 @@ i2 = 0;
 
 // Die function
 self.Die = function() {
-	instance_create(self.x + random_range(-64, 64), self.y + random_range(-64, 64), obj_death_anim);
+	instance_create(self.x, self.y, obj_death_anim);
 	instance_create(self.x, self.y, obj_pickup_stage1);
 	instance_destroy();
 }

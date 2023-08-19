@@ -29,7 +29,7 @@ self.Die = function() {
 	instance_destroy(obj_boss_summon_3);
 	instance_destroy(obj_bullet);
 	
-	instance_create(self.x + random_range(-64, 64), self.y + random_range(-64, 64), obj_death_anim);
+	instance_create(self.x, self.y, obj_death_anim);
 	instance_destroy();
 }
 
@@ -46,10 +46,10 @@ self.PhaseChange = function() {
 		case 2: self.health = 3000; self.max_health = 3000; ScoreCheck();
 		CheckLives(); phase++; instance_destroy(obj_bullet); break; // Goes up, Spell
 		
-		case 3: self.health = 6000; self.max_health = 6000; ScoreCheck();
+		case 3: self.health = 7500; self.max_health = 6000; ScoreCheck();
 		CheckLives(); phase++; instance_destroy(obj_bullet); break; // Spell
 		
-		case 4: self.health = 6000; self.max_health = 6000; ScoreCheck();
+		case 4: self.health = 5000; self.max_health = 6000; ScoreCheck();
 		CheckLives(); phase++; instance_destroy(obj_bullet); break; // Final Spell
 		
 		case 5: ScoreCheck(); self.Die(); break;
@@ -77,7 +77,7 @@ self.BulletChange = function() {
 		bhpg_pattern_init(1, 0, 0, 2, 360, 0, 0, 0, 0, 15, 32, 32, 0, 0);
 		bhpg_bullet_init(obj_bullet_spawn_big, 3, 0, 0); break;
 		
-		case 5: i = 0; i2 = 0; score_given += 10000; break;
+		case 5: i = 0; i2 = 0; score_given += 15000; break;
 	}
 }
 

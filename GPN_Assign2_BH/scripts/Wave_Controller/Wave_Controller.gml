@@ -16,7 +16,8 @@ function Level() constructor {
 		
 		if ((instance_number(obj_foe) == 0 && wave_index > 0) || wave_timer <= 0) {
 			if (Complete()) {
-				if (instance_number(obj_foe) == 0 && instance_number(obj_bullet) == 0) {}
+				if (instance_number(obj_foe) == 0 && instance_number(obj_bullet) == 0
+				&& room == rm_stage2) { room_goto(rm_ending) }
 			} else { SendWave() }
 		}
 	}
