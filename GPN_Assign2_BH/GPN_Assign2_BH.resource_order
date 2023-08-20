@@ -163,6 +163,7 @@
     {"name":"spr_bullet_spawned","order":3,"path":"sprites/spr_bullet_spawned/spr_bullet_spawned.yy",},
     {"name":"spr_player_left","order":1,"path":"sprites/spr_player_left/spr_player_left.yy",},
     {"name":"obj_controls","order":2,"path":"objects/obj_controls/obj_controls.yy",},
+    {"name":"snd_boss_bgm","order":2,"path":"sounds/snd_boss_bgm/snd_boss_bgm.yy",},
     {"name":"story_bg_2","order":5,"path":"sprites/story_bg_2/story_bg_2.yy",},
     {"name":"obj_bullet_spawn_big","order":7,"path":"objects/obj_bullet_spawn_big/obj_bullet_spawn_big.yy",},
     {"name":"path_enter_top_far","order":5,"path":"paths/path_enter_top_far/path_enter_top_far.yy",},

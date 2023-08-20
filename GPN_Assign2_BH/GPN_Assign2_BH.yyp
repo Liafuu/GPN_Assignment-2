@@ -222,6 +222,7 @@
     {"id":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"id":{"name":"spr_player_left","path":"sprites/spr_player_left/spr_player_left.yy",},},
     {"id":{"name":"obj_controls","path":"objects/obj_controls/obj_controls.yy",},},
+    {"id":{"name":"snd_boss_bgm","path":"sounds/snd_boss_bgm/snd_boss_bgm.yy",},},
     {"id":{"name":"story_bg_2","path":"sprites/story_bg_2/story_bg_2.yy",},},
     {"id":{"name":"obj_bullet_spawn_big","path":"objects/obj_bullet_spawn_big/obj_bullet_spawn_big.yy",},},
     {"id":{"name":"path_enter_top_far","path":"paths/path_enter_top_far/path_enter_top_far.yy",},},
