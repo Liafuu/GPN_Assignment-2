@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Special Bullets",
-    "path": "folders/Objects/Bullets/Special Bullets.yy",
+    "name": "Boss Bullets",
+    "path": "folders/Objects/Bullets/Boss Bullets.yy",
   },
   "parentObjectId": {
     "name": "obj_bullet",

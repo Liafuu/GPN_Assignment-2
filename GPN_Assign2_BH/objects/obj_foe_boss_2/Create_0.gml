@@ -23,6 +23,13 @@ last_shot_time_3 = 0;
 i = 0;
 i2 = 0;
 
+// Pauses for a while before starting the next phase
+strt = false;
+self.WaitStart = function() {
+	strt = false;
+	alarm[0] = game_get_speed(gamespeed_fps) * 2
+}
+
 // Dies
 self.Die = function() {
 	instance_destroy(obj_boss_summon_2);
@@ -37,20 +44,19 @@ self.Die = function() {
 self.PhaseChange = function() {
 	// Switches between each phase
 	switch (phase) {
-		case 0: self.health = 1500; self.max_health = 2000; ScoreCheck();
-		CheckLives(); phase++; instance_destroy(obj_bullet); break; // Goes bottom, Spell
-		// Changes needed cuz it sucks
+		case 0: self.health = 1500; self.max_health = 1500; ScoreCheck();
+		CheckLives(); WaitStart(); phase++; break; // Goes bottom, Spell
 		
-		case 1: self.health = 1500; self.max_health = 2000; ScoreCheck();
-		CheckLives(); phase++; instance_destroy(obj_bullet); break; // Bottom, Non-spell
+		case 1: self.health = 1500; self.max_health = 1500; ScoreCheck();
+		CheckLives(); WaitStart(); phase++; break; // Bottom, Non-spell
 		
-		case 2: self.health = 3000; self.max_health = 3000; ScoreCheck();
-		CheckLives(); phase++; instance_destroy(obj_bullet); break; // Goes up, Spell
+		case 2: self.health = 4000; self.max_health = 4000; ScoreCheck();
+		CheckLives(); WaitStart(); phase++; break; // Goes up, Spell
 		
-		case 3: self.health = 7500; self.max_health = 6000; ScoreCheck();
-		CheckLives(); phase++; instance_destroy(obj_bullet); break; // Spell
+		case 3: self.health = 5500; self.max_health = 5500; ScoreCheck();
+		CheckLives(); WaitStart(); phase++; break; // Spell
 		
-		case 4: self.health = 5000; self.max_health = 6000; ScoreCheck();
+		case 4: self.health = 5000; self.max_health = 5000; ScoreCheck();
 		CheckLives(); phase++; instance_destroy(obj_bullet); break; // Final Spell
 		
 		case 5: ScoreCheck(); self.Die(); break;
@@ -63,12 +69,9 @@ self.BulletChange = function() {
 		// Changes the bullet pattern with every phase
 		case 1: i = 0; i2 = 0; 
 		path_start(self.path_enter, self.path_spd, path_action_stop, false);
-		
-		bhpg_pattern_init(1, 0, 0, 2, 360, 0, 0, 0, 0, 15, 32, 32, 0, 0);
-		bhpg_bullet_init(obj_bullet_spawn, 3, 0, 0);
 		break;
 		
-		case 2: i = 0; i2 = 0; break;
+		case 2: i = 0; i2 = 0; shot_per_sec_2 = 3; break;
 		
 		case 3: i = 0; i2 = 0; score_given += 7500;
 		path_start(self.path_exit, self.path_spd, path_action_stop, false);
@@ -88,7 +91,7 @@ self.OnDamage = function(bullet) {
 	// Takes damage
 	if (phase == 3 && instance_number(obj_boss_summon_2) == 2) {
 		self.health -= bullet.damage;
-	} else if (phase != 3 && path_position == 1) {
+	} else if (phase != 3 && path_position == 1 && strt) {
 		self.health -= bullet.damage;
 	}
 	
@@ -129,3 +132,4 @@ path_start(self.path_enter, self.path_spd, path_action_stop, false);
 // Phase 0
 bhpg_pattern_init(1, 0, 0, 1, 0, 0, 1.5, 0, 20, 10, 32, 32, 0, 0);
 bhpg_bullet_init(obj_bullet_splitting_many, 3, 0, 0);
+WaitStart();
