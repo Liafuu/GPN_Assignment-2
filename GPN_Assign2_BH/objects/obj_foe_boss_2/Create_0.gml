@@ -37,10 +37,11 @@ self.Die = function() {
 self.PhaseChange = function() {
 	// Switches between each phase
 	switch (phase) {
-		case 0: self.health = 2000; self.max_health = 2000; ScoreCheck();
+		case 0: self.health = 1500; self.max_health = 2000; ScoreCheck();
 		CheckLives(); phase++; instance_destroy(obj_bullet); break; // Goes bottom, Spell
+		// Changes needed cuz it sucks
 		
-		case 1: self.health = 2000; self.max_health = 2000; ScoreCheck();
+		case 1: self.health = 1500; self.max_health = 2000; ScoreCheck();
 		CheckLives(); phase++; instance_destroy(obj_bullet); break; // Bottom, Non-spell
 		
 		case 2: self.health = 3000; self.max_health = 3000; ScoreCheck();

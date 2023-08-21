@@ -110,6 +110,7 @@
     {"name":"obj_bullet_player_focus","order":5,"path":"objects/obj_bullet_player_focus/obj_bullet_player_focus.yy",},
     {"name":"obj_GameController","order":1,"path":"objects/obj_GameController/obj_GameController.yy",},
     {"name":"obj_bullet_splitting_many","order":5,"path":"objects/obj_bullet_splitting_many/obj_bullet_splitting_many.yy",},
+    {"name":"obj_bombs","order":7,"path":"objects/obj_bombs/obj_bombs.yy",},
     {"name":"obj_foe_target_left","order":2,"path":"objects/obj_foe_target_left/obj_foe_target_left.yy",},
     {"name":"rm_debugging_2","order":3,"path":"rooms/rm_debugging_2/rm_debugging_2.yy",},
     {"name":"action_kill_object","order":2,"path":"scripts/action_kill_object/action_kill_object.yy",},

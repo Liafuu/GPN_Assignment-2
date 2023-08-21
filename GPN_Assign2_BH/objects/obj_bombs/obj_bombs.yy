@@ -1,11 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_bullet_player_bomb",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
-  ],
+  "name": "obj_bombs",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -13,8 +10,8 @@
     "path": "folders/Objects/Bullets/Player Bullets.yy",
   },
   "parentObjectId": {
-    "name": "obj_bombs",
-    "path": "objects/obj_bombs/obj_bombs.yy",
+    "name": "obj_bullet",
+    "path": "objects/obj_bullet/obj_bullet.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -31,10 +28,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_bullet_pbomb_1",
-    "path": "sprites/spr_bullet_pbomb_1/spr_bullet_pbomb_1.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

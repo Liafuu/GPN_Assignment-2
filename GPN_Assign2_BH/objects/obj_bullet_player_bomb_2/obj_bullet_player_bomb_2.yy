@@ -13,8 +13,8 @@
     "path": "folders/Objects/Bullets/Player Bullets.yy",
   },
   "parentObjectId": {
-    "name": "obj_bullet",
-    "path": "objects/obj_bullet/obj_bullet.yy",
+    "name": "obj_bombs",
+    "path": "objects/obj_bombs/obj_bombs.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

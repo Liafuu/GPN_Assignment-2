@@ -1,6 +1,6 @@
 // Stops shooting for phase 3 as it is a targetting phase - uses a different thing entirely
 // Also prevents shooting until path is done
-if (phase == 1) {
+if (phase == 1 && strt) {
 	if (last_shot_time + 1 / shot_per_sec <= current_time / 1000) {
 		// First set
 		self.Aim(obj_player_hitbox.id);
@@ -18,7 +18,7 @@ if (phase == 1) {
 		
 		last_shot_time_2 = current_time / 1000; }
 		
-} else if (phase == 4 && path_position == 1) {
+} else if (phase == 4 && path_position == 1  && strt) {
 	if (last_shot_time + 1 / shot_per_sec <= current_time / 1000) {
 		// First Set
 		bhpg_pattern_init(1, 0, 0, 15, 5400, 0, 0, 1, 0, 100, 0, 0, 0, 0);
@@ -76,7 +76,7 @@ if (phase == 1) {
 		
 	if (self.health <= 3000 && p == 1) { instance_destroy(obj_bullet); p = 2;}
 	
-} else if (path_position == 1) {
+} else if (path_position == 1  && strt) {
 	bhpg_pattern_step();
 }
 

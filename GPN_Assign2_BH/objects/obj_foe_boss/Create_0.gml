@@ -22,6 +22,13 @@ last_shot_time_3 = 0;
 i = 0;
 i2 = 0;
 
+// Pauses for a while before starting the next phase
+strt = false;
+self.WaitStart = function() {
+	strt = false;
+	alarm[0] = game_get_speed(gamespeed_fps) * 2
+}
+
 // Die function
 self.Die = function() {
 	instance_create(self.x, self.y, obj_death_anim);
@@ -45,17 +52,17 @@ self.Aim = function(player) {
 self.PhaseChange = function() {
 	// Switches between each phase
 	switch (phase) {
-		case 0: self.health = 2200; self.max_health = 2200; ScoreCheck(); 
-		CheckLives(); phase++; instance_destroy(obj_bullet); break;
+		case 0: self.health = 2200; self.max_health = 2200; ScoreCheck();
+		CheckLives(); WaitStart(); phase++; break;
 		
 		case 1: self.health = 2500; self.max_health = 2500; ScoreCheck();
-		CheckLives(); phase++; instance_destroy(obj_bullet); break;
+		CheckLives(); WaitStart(); phase++; break;
 		
 		case 2: self.health = 2500; self.max_health = 2500; ScoreCheck();
-		CheckLives(); phase++; instance_destroy(obj_bullet); break;
+		CheckLives(); WaitStart(); phase++; break;
 		
 		case 3: self.health = 8000; self.max_health = 8000; ScoreCheck(); 
-		CheckLives(); phase++; instance_destroy(obj_bullet); break;
+		CheckLives(); WaitStart(); phase++; break;
 		
 		case 4: ScoreCheck(); self.Die(); break;
 	}
@@ -84,7 +91,7 @@ self.BulletChange = function() {
 self.OnDamage = function(bullet) {
 	
 	// Takes damage
-	if (path_position == 1) {
+	if (path_position == 1 && strt) {
 		self.health -= bullet.damage;
 	}
 	
@@ -113,3 +120,4 @@ path_start(self.path_enter, self.path_spd, path_action_stop, false);
 // Phase 0
 bhpg_pattern_init(2, 10, 0, 8, 2560, 20, 3, 1, 50, 12, 0, 0, 0, 0);
 bhpg_bullet_init(obj_bullet_main, 3, 0, 0);
+WaitStart();
