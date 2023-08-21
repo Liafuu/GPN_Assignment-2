@@ -47,7 +47,7 @@ self.PhaseChange = function() {
 		case 0: self.health = 1500; self.max_health = 1500; ScoreCheck();
 		CheckLives(); WaitStart(); phase++; break; // Goes bottom, Spell
 		
-		case 1: self.health = 1500; self.max_health = 1500; ScoreCheck();
+		case 1: self.health = 1200; self.max_health = 1200; ScoreCheck();
 		CheckLives(); WaitStart(); phase++; break; // Bottom, Non-spell
 		
 		case 2: self.health = 4000; self.max_health = 4000; ScoreCheck();

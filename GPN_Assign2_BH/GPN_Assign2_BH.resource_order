@@ -49,6 +49,8 @@
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
     {"name":"Boss Bullets","order":15,"path":"folders/Objects/Bullets/Boss Bullets.yy",},
+    {"name":"Laser","order":9,"path":"folders/Sprites/Bullets/Laser.yy",},
+    {"name":"Laser","order":16,"path":"folders/Objects/Bullets/Laser.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"stage_bg","order":1,"path":"sprites/stage_bg/stage_bg.yy",},

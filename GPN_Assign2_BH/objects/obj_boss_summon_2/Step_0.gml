@@ -22,7 +22,7 @@ if (instance_number(obj_boss_summon_2) > 1 && obj_foe_boss_2.phase == 3) {
 		
 		last_shot_time_2 = current_time / 1000;
 	}
-} else if (obj_foe_boss_2.phase == 4) {
+} else if (obj_foe_boss_2.phase == 4 && obj_foe_boss_2.strt) {
 	if (last_shot_time + 1 / (shot_per_sec - 13.8) <= current_time / 1000) {
 		bhpg_pattern_init(1, 0, 270, 1, 0, 0, 0, 1, 0, 5, 16, 16, 0, 0);
 		bhpg_bullet_init(obj_bullet_spawned_big, random_range(3, 5), 0, 0);
