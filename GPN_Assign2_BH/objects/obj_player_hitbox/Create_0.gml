@@ -10,7 +10,7 @@ focus = false;
 player_spd = 1;
 
 // Health, Bombs and IFrame duration
-if (is_debug) {global.lives = 99;} 
+if (is_debug) {global.lives += 99;} 
 self.iframe_time = 0;
 self.iframe_dura = 6;
 self.dead = false;

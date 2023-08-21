@@ -29,12 +29,12 @@ if (key_shoot && key_focus) {
 		// Shooting during Focus Mode
 		self.Aim();
 		bhpg_pattern_init(1, 0, shot_angle, 1, 0, 0, 0, 1, 30, 4, 0, 0, 10, 0);
-		bhpg_bullet_init(obj_bullet_player_focus_homing, 35, 1, 0);
+		bhpg_bullet_init(obj_bullet_player_focus_homing, 10, 0.2, 0);
 		bhpg_pattern_step();
 		
 		self.Aim();
 		bhpg_pattern_init(1, 0, shot_angle, 1, 0, 0, 0, 1, 30, 4, 0, 0, -10, 0);
-		bhpg_bullet_init(obj_bullet_player_focus_homing, 35, 1, 0);
+		bhpg_bullet_init(obj_bullet_player_focus_homing, 10, 0.2, 0);
 		bhpg_pattern_step();
 
 

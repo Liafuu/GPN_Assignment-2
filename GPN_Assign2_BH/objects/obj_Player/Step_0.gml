@@ -99,7 +99,7 @@ if (bomb_focus && bomb_use) {
 		// Makes the player invulnerable
 		if (b < 1) {obj_player_hitbox.iframe_time = (current_time / 1000) - 4; global.bombs --;}
 		b++; // Limits amount of bomb projectiles that will be shot
-		if (b > 23) {bomb_use = false; bomb_focus = false;}
+		if (b > 20) {bomb_use = false; bomb_focus = false;}
 		last_shot_time = current_time / 1000;
 		last_bomb_time = current_time / 1000;
 	}
