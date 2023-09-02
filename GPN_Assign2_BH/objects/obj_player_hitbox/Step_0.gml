@@ -35,5 +35,8 @@ if (place_meeting(x, y + key_vert, obj_death_anim) == true) { key_vert = 0; }
 x += key_hor;
 y += key_vert;
 
+xpos = x;
+ypos = y;
+
 x = clamp(x, 30, room_width - sprite_width - 22);
 y = clamp(y, 30, room_height - sprite_height - 38);

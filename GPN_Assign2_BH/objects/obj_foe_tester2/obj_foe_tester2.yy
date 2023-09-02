@@ -14,8 +14,8 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_foe","path":"objects/obj_foe/obj_foe.yy",},"propertyId":{"name":"health","path":"objects/obj_foe/obj_foe.yy",},"value":"49999",},
   ],
   "parent": {
-    "name": "Foes",
-    "path": "folders/Objects/Foes.yy",
+    "name": "Tests",
+    "path": "folders/Objects/Foes/Tests.yy",
   },
   "parentObjectId": {
     "name": "obj_foe",

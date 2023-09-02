@@ -27,13 +27,13 @@ i2 = 0;
 strt = false;
 self.WaitStart = function() {
 	strt = false;
-	alarm[0] = game_get_speed(gamespeed_fps) * 2
+	alarm[0] = game_get_speed(gamespeed_fps) * 4
 }
 
 // Dies
 self.Die = function() {
-	instance_destroy(obj_boss_summon_2);
-	instance_destroy(obj_boss_summon_3);
+	instance_destroy(obj_boss2_summon);
+	instance_destroy(obj_boss2_summon_bullet);
 	instance_destroy(obj_bullet);
 	
 	instance_create(self.x, self.y, obj_death_anim);
@@ -89,7 +89,7 @@ self.BulletChange = function() {
 self.OnDamage = function(bullet) {
 	
 	// Takes damage
-	if (phase == 3 && instance_number(obj_boss_summon_2) == 2) {
+	if (phase == 3 && instance_number(obj_boss2_summon) == 2) {
 		self.health -= bullet.damage;
 	} else if (phase != 3 && path_position == 1 && strt) {
 		self.health -= bullet.damage;

@@ -54,7 +54,7 @@ Die = function() {
 
 Update = function() {
 	if (self.dead) {
-		instance_destroy(obj_bullet);
+		if (!is_debug) {instance_destroy(obj_bullet)};
 		
 		// Resets the player's position
 		obj_player.x = xstart;

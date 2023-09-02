@@ -4,7 +4,6 @@
 friendly = true;
 focus = false;
 
-
 // Shot cool down
 shot_per_sec = 15;
 last_shot_time = 0;
