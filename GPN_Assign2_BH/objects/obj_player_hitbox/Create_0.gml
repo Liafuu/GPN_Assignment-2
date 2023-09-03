@@ -48,7 +48,7 @@ Die = function() {
 		instance_create(self.x, self.y, obj_death_anim);
 		obj_death_anim.player = true;
 		
-		audio_play_sound(snd_player_dies, 0, false);
+		audio_play_sound(snd_player_dies, 5, false);
 	}
 }
 
