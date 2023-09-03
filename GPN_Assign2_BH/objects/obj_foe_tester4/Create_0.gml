@@ -1,6 +1,6 @@
 event_inherited();
 
-shot_per_sec = 1.5;
+shot_per_sec = 3;
 
 last_shot_time = 0;
 last_shot_time_2 = 0;

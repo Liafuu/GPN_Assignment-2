@@ -196,6 +196,7 @@
     {"id":{"name":"__init_action","path":"scripts/__init_action/__init_action.yy",},},
     {"id":{"name":"obj_boss3_summon_bullet","path":"objects/obj_boss3_summon_bullet/obj_boss3_summon_bullet.yy",},},
     {"id":{"name":"obj_foe","path":"objects/obj_foe/obj_foe.yy",},},
+    {"id":{"name":"Sprite63","path":"sprites/Sprite63/Sprite63.yy",},},
     {"id":{"name":"spr_bullet_split","path":"sprites/spr_bullet_split/spr_bullet_split.yy",},},
     {"id":{"name":"TitleFont","path":"fonts/TitleFont/TitleFont.yy",},},
     {"id":{"name":"action_current_room","path":"scripts/action_current_room/action_current_room.yy",},},

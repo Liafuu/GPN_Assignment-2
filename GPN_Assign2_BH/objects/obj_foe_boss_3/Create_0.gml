@@ -44,21 +44,21 @@ self.Die = function() {
 self.PhaseChange = function() {
 	// Switches between each phase
 	switch (phase) {
-		case 0: self.health = 1; self.max_health = 3000; ScoreCheck();
+		case 0: self.health = 1; self.max_health = 1; ScoreCheck();
 		CheckLives(); WaitStart(); instance_destroy(obj_bullet); phase++; break; // Spell 1
 		
 		case 1: self.health = 1; self.max_health = 1; ScoreCheck();
 		CheckLives(); WaitStart(); instance_destroy(obj_boss3_summon);
 		instance_destroy(obj_bullet); phase++; break; // Non-spell 2
 		
-		case 2: self.health = 1; self.max_health = 4000; ScoreCheck();
+		case 2: self.health = 1; self.max_health = 1; ScoreCheck();
 		CheckLives(); WaitStart(); instance_destroy(obj_bullet); phase++; break; // Spell 2
 		
-		case 3: self.health = 1; self.max_health = 5500; ScoreCheck();
+		case 3: self.health = 1; self.max_health = 1; ScoreCheck();
 		CheckLives(); WaitStart(); instance_destroy(obj_boss3_summon); 
 		instance_destroy(obj_bullet); phase++; break; // Non-spell 3
 		
-		case 4: self.health = 5000; self.max_health = 5000; ScoreCheck();
+		case 4: self.health = 1; self.max_health = 1; ScoreCheck();
 		CheckLives(); WaitStart(); instance_destroy(obj_bullet); phase++; break; // Spell 3
 		
 		case 5: self.health = 5500; self.max_health = 5500; ScoreCheck();
