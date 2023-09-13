@@ -9,7 +9,7 @@ focus = false;
 shot_per_sec = 15;
 last_shot_time = 0;
 
-bomb_cd = 1;
+bomb_cd = 0.45;
 last_bomb_time = 0;
 
 
@@ -22,4 +22,11 @@ self.Bomb = function(focusing) {
 	if (focusing) {bomb_focus = true;}
 	bomb_use = true;
 	b = 0;
+}
+
+// Collecting lives
+OnCollection = function(life) {
+	global.lives++;
+	global.score += 10000;
+	instance_destroy(life);
 }

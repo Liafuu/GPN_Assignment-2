@@ -1,0 +1,8 @@
+speed += accel;
+direction += curve;
+
+
+
+
+
+

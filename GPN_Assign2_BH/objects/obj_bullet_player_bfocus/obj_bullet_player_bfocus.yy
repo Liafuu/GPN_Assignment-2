@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_bullet_player_bomb_2",
+  "name": "obj_bullet_player_bfocus",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_bullet_pbomb_2",
-    "path": "sprites/spr_bullet_pbomb_2/spr_bullet_pbomb_2.yy",
+    "name": "spr_bullet_pfocus_big",
+    "path": "sprites/spr_bullet_pfocus_big/spr_bullet_pfocus_big.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -1,8 +1,8 @@
 // Inherit the parent event
 event_inherited();
 
-damage = 1.5;
-pierce = true; // Allows the bullet to hit multiple non-boss enemies
+damage = 2;
+pierce = true; // Allows the bullet to hit multiple targets
 friendly = true;
 
 // Allows the bullet to destroy other bullets

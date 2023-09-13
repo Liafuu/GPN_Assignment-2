@@ -6,5 +6,3 @@ self.OnDamage(other.id);
 
 
 
-
-

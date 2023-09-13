@@ -1,0 +1,1 @@
+bhpg_pattern_step();

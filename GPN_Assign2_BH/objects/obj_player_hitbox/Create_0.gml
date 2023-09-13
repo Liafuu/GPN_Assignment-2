@@ -35,13 +35,6 @@ OnEntityContact = function(entity) {
 	self.Die();
 }
 
-// Collecting lives
-OnCollection = function(life) {
-	global.lives++;
-	global.score += 10000;
-	instance_destroy(life);
-}
-
 // Resets spawn and destroy all bullets on screen
 Die = function() {
 	if (instance_number(obj_death_anim) = 0 && self.dead == false) {

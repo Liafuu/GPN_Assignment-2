@@ -1,20 +1,21 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_bullet_player_bomb_focus",
+  "name": "obj_bullet_changing_spam",
   "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":7,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Player Bullets",
-    "path": "folders/Objects/Bullets/Player Bullets.yy",
+    "name": "Special Bullets",
+    "path": "folders/Objects/Bullets/Special Bullets.yy",
   },
   "parentObjectId": {
-    "name": "obj_bombs",
-    "path": "objects/obj_bombs/obj_bombs.yy",
+    "name": "obj_bullet",
+    "path": "objects/obj_bullet/obj_bullet.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -32,8 +33,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_bullet_pfocus_big",
-    "path": "sprites/spr_bullet_pfocus_big/spr_bullet_pfocus_big.yy",
+    "name": "spr_bullet_foe_changing",
+    "path": "sprites/spr_bullet_foe_changing/spr_bullet_foe_changing.yy",
   },
   "spriteMaskId": null,
   "visible": true,
