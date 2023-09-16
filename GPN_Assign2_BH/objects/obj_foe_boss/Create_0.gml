@@ -62,7 +62,7 @@ self.PhaseChange = function() {
 		CheckLives(); WaitStart(); phase++; break;
 		
 		case 3: self.health = 8000; self.max_health = 8000; ScoreCheck(); 
-		CheckLives(); WaitStart(); phase++; break;
+		CheckLives(); WaitStart(); instance_destroy(obj_bullet); phase++; break;
 		
 		case 4: ScoreCheck(); self.Die(); break;
 	}

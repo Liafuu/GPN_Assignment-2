@@ -261,10 +261,10 @@
     {"id":{"name":"rm_stage","path":"rooms/rm_stage/rm_stage.yy",},},
   ],
   "RoomOrderNodes": [
+    {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"roomId":{"name":"rm_debugging_2","path":"rooms/rm_debugging_2/rm_debugging_2.yy",},},
     {"roomId":{"name":"bhpg_test","path":"rooms/bhpg_test/bhpg_test.yy",},},
     {"roomId":{"name":"rm_stage3","path":"rooms/rm_stage3/rm_stage3.yy",},},
-    {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"roomId":{"name":"rm_debugging","path":"rooms/rm_debugging/rm_debugging.yy",},},
     {"children":[
         {"roomId":{"name":"rm_story","path":"rooms/rm_story/rm_story.yy",},},
