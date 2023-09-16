@@ -11,6 +11,8 @@ self.Die = function() {
 	}
 	
 	global.score += score_given;
+	audio_play_sound(snd_enemy_dies, 1, false);
+	instance_create(self.x, self.y, obj_death_anim);
 	instance_destroy();
 }
 

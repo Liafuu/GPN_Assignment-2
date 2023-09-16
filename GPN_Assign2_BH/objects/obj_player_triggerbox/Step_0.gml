@@ -35,6 +35,11 @@ y += key_vert;
 xpos = x;
 ypos = y;
 
-x = clamp(x, 30, room_width - sprite_width + 8);
-y = clamp(y, 30, room_height - sprite_height - 8);
+x = clamp(x, 30, room_width - sprite_width + 118);
+y = clamp(y, 30, room_height - sprite_height + 102);
+
+
+
+
+
 
