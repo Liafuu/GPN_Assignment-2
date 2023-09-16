@@ -1,4 +1,6 @@
-action_kill_object();
+if (self.seen_in_room) {
+	action_kill_object();
+}
 
 
 
