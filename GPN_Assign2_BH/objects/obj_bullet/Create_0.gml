@@ -5,5 +5,5 @@ damage = 1;
 pierce = false;
 friendly = false;
 
-
+has_grazed = false;
 

@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "Boss",
-    "path": "folders/Sprites/Foe/Boss.yy",
+    "path": "folders/Sprites/Bullets/Foe/Boss.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

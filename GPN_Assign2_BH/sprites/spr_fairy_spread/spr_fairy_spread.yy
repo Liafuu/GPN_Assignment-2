@@ -29,7 +29,7 @@
   "origin": 4,
   "parent": {
     "name": "Spread",
-    "path": "folders/Sprites/Foe/Spread.yy",
+    "path": "folders/Sprites/Bullets/Foe/Spread.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
