@@ -16,6 +16,7 @@
     {"name":"Explode","order":9,"path":"folders/Objects/Foes/Explode.yy",},
     {"name":"Spiral","order":4,"path":"folders/Objects/Foes/Spiral.yy",},
     {"name":"Spread","order":5,"path":"folders/Objects/Foes/Spread.yy",},
+    {"name":"Summons","order":12,"path":"folders/Objects/Foes/Summons.yy",},
     {"name":"Target","order":3,"path":"folders/Objects/Foes/Target.yy",},
     {"name":"Tests","order":11,"path":"folders/Objects/Foes/Tests.yy",},
     {"name":"Levels","order":4,"path":"folders/Objects/Levels.yy",},
@@ -52,7 +53,6 @@
     {"name":"Player","order":1,"path":"folders/Sprites/Player.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"Summons","order":12,"path":"folders/Objects/Foes/Summons.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"stage_1_bg","order":1,"path":"sprites/stage_1_bg/stage_1_bg.yy",},
