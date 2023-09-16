@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_bullet_foe_target_big62",
-    "path": "sprites/spr_bullet_foe_target_big62/spr_bullet_foe_target_big62.yy",
+    "name": "spr_bullet_foe_target_big2",
+    "path": "sprites/spr_bullet_foe_target_big2/spr_bullet_foe_target_big2.yy",
   },
   "spriteMaskId": null,
   "visible": true,

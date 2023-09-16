@@ -97,7 +97,10 @@ self.OnDamage = function(bullet) {
 	// Takes damage
 	if (phase == 1 && instance_number(obj_boss3_summon) == 2) {
 		self.health -= bullet.damage;
-	} else if (phase != 1 && path_position == 1 && strt) {
+	} else if (phase == 3 && instance_number(obj_boss3_summon) == 3) {
+		self.health -= bullet.damage;
+	}
+	else if ((phase != 1 && phase != 3) && path_position == 1 && strt) {
 		self.health -= bullet.damage;
 	}
 	

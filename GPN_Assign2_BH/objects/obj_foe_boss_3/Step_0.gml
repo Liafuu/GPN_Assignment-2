@@ -37,11 +37,20 @@ if (phase == 1) {
 } else if (phase == 5) {	
 	if (last_shot_time + 1 / (shot_per_sec - 4.8) <= current_time / 1000) {
 		// Summons a gigantic circle of summons
-		bhpg_pattern_init(1, 0, 270, 10, (360 * 10), 0, 0, 1, 0, 100, 0, 0, 0, 0);
+		bhpg_pattern_init(1, 0, 90, 5, (285*5), 0, 0, 1, 0, 100, 0, 0, 0, 0);
 		bhpg_bullet_init(obj_boss3_summon_bullet, 5, 0, 0);
 		bhpg_pattern_step();
 		
-		last_shot_time = current_time / 1000; }
+		last_shot_time = current_time / 1000;
+	}
+	
+	if (last_shot_time_2 + 1 / (shot_per_sec - 2) <= current_time / 1000) {
+		bhpg_pattern_init(1, 0, random_range(0, 360), 11, (360*11), 0, 0, 1, 0, 100, 0, 0, random_range(-32,32), random_range(-32,32));
+		bhpg_bullet_init(obj_bullet_split_pink, 3, 0, 0);
+		bhpg_pattern_step();
+		
+		last_shot_time_2 = current_time / 1000;
+	}
 
 }
 else if (path_position == 1 && strt) {

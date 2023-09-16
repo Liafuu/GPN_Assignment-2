@@ -8,6 +8,7 @@ focus = false;
 // Shot cooldown
 shot_per_sec = 15;
 last_shot_time = 0;
+last_shot_time_2 = 0;
 
 bomb_cd = 0.45;
 last_bomb_time = 0;
