@@ -6,4 +6,4 @@ pierce = false;
 friendly = false;
 
 has_grazed = false;
-
+seen_in_room = false;
